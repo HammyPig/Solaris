@@ -14,6 +14,10 @@ empire_base = {
 	country_power_projection_influence_produces_add = 2
 	country_edict_fund_add = 10
 	COUNTRY_NAVAL_COVERAGE_MULT = 1
+	ship_speed_mult = -0.5
+	ship_windup_mult = 1
+	ship_winddown_mult = 1
+	ship_interstellar_speed_mult = -0.5
 }
 
 # Only applied to human-controlled empires
