@@ -1,7 +1,7 @@
 setup_scenario = {
 	name = "tiny"
 	priority = 0					#priority decides in which order the scenarios are listed
-	num_stars = 200
+	num_stars = 150
 	radius = 200					#should be less than 500, preferably less than ~460
 	num_empires = { min = 0 max = 6 }	#limits player customization
 	num_empire_default = 3
