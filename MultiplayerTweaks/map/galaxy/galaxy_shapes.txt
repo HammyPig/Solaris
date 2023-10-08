@@ -5,8 +5,8 @@ elliptical = {
 	stars_min_dist = 10.0				# Min distance between stars
 
 	countries = {
-		ideal_sq_dist_between = 5625	# 75*75 Ideal square distance between countries
-		min_sq_dist_between = 2500		# 50*50 Min square distance between countries
+		ideal_sq_dist_between = 22500	# 75*75 Ideal square distance between countries
+		min_sq_dist_between = 22500		# 50*50 Min square distance between countries
 	}
 
 	fallen_empires = {
