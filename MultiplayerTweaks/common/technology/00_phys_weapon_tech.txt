@@ -195,85 +195,19 @@ tech_lasers_5 = {
 
 tech_energy_lance_1 = {
 	area = physics
-	cost = @tier4cost2
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_lasers_4" "tech_battleships" }
-	weight = @tier4weight2
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_energy_lance_2 = {
 	area = physics
-	cost = @tier4cost3
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_lasers_5" "tech_energy_lance_1" }
-	weight = @tier4weight3
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
@@ -283,218 +217,46 @@ tech_energy_lance_2 = {
 
 tech_plasma_1 = {
 	area = physics
-	cost = @tier2cost2
-	tier = 2
-	category = { particles }
-	ai_update_type = military
-	weight = @tier2weight2
+	weight = 0
 
-	prerequisites = { "tech_lasers_2" }
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-		modifier = {
-			factor = 0.5
-			NOT = {
-				has_technology = "tech_lasers_1"
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_plasma_2 = {
 	area = physics
-	cost = @tier3cost1
-	tier = 3
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_plasma_1" }
-	weight = @tier3weight1
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_plasma_3 = {
 	area = physics
-	cost = @tier4cost1
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_plasma_2" }
-	weight = @tier4weight1
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_arc_emitter_1 = {
 	area = physics
-	cost = @tier4cost2
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_disruptors_3" "tech_battleships" }
-	weight = @tier4weight2
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_arc_emitter_2 = {
 	area = physics
-	cost = @tier4cost3
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_arc_emitter_1" }
-	weight = @tier4weight3
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
@@ -504,134 +266,28 @@ tech_arc_emitter_2 = {
 
 tech_disruptors_1 = {
 	area = physics
-	cost = @tier2cost2
-	tier = 2
-	category = { particles }
-	ai_update_type = military
-	weight = @tier2weight2
+	weight = 0
 
-	prerequisites = { "tech_lasers_2" }
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-		modifier = {
-			factor = 0.5
-			NOT = {
-				has_technology = "tech_lasers_1"
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_disruptors_2 = {
 	area = physics
-	cost = @tier3cost1
-	tier = 3
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_disruptors_1" }
-	weight = @tier3weight1
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_disruptors_3 = {
 	area = physics
-	cost = @tier4cost1
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_disruptors_2" }
-	weight = @tier4weight1
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
@@ -641,91 +297,19 @@ tech_disruptors_3 = {
 
 tech_energy_torpedoes_1 = {
 	area = physics
-	cost = @tier3cost3
-	tier = 3
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_torpedoes_1" "tech_lasers_4" }
-	weight = @tier3weight3
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				has_technology = "tech_lasers_1"
-			}
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_energy_torpedoes_2 = {
 	area = physics
-	cost = @tier4cost2
-	tier = 4
-	category = { particles }
-	ai_update_type = military
-	prerequisites = { "tech_energy_torpedoes_1" }
-	weight = @tier4weight2
+	weight = 0
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
+	potential = {
+		always = no
 	}
 }
 
@@ -745,58 +329,20 @@ tech_pd_tracking_1 = {
 #Interlinked Support Systems
 tech_pd_tracking_2 = {
 	area = physics
-	tier = 2
-	cost = @tier2cost3
-	category = { computing }
-	ai_update_type = military
-	prerequisites = { "tech_pd_tracking_1" }
-	weight = @tier2weight3
+	weight = 0
 
-	# unlocks point defence 2
-
-	weight_modifier = {
-		
-	}
-
-	ai_weight = {
-		
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_strike_craft
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}
+	potential = {
+		always = no
 	}
 }
 
 #Predictive Algorithms
 tech_pd_tracking_3 = {
 	area = physics
-	tier = 4
-	cost = @tier4cost1
-	category = { computing }
-	ai_update_type = military
-	prerequisites = { "tech_pd_tracking_2" }
-	weight = @tier4weight1
+	weight = 0
 
-	# unlocks point defence 3
-
-	weight_modifier = {
-		
-	}
-
-	ai_weight = {
-		
-		modifier = {
-			factor = @favored_weapon_ai_tech_factor
-			is_preferred_weapons = weapon_type_strike_craft
-		}
-		modifier = {
-			factor = @disfavored_weapon_ai_tech_factor
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}
+	potential = {
+		always = no
 	}
 }
 

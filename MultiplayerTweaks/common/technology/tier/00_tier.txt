@@ -34,7 +34,7 @@
 }
 
 2 = { # Tier 2
-	previously_unlocked = 6
+	previously_unlocked = 3
 	weight_modifier = {
 		base = 1
 		complex_trigger_modifier = {
@@ -49,7 +49,7 @@
 }
 
 3 = { # Tier 3
-	previously_unlocked = 6
+	previously_unlocked = 3
 	weight_modifier = {
 		base = 1
 		complex_trigger_modifier = {
@@ -64,7 +64,7 @@
 }
 
 4 = { # Tier 4
-	previously_unlocked = 6
+	previously_unlocked = 3
 	weight_modifier = {
 		base = 1
 		complex_trigger_modifier = {
@@ -76,6 +76,6 @@
 }
 
 5 = { # Tier 5
-	previously_unlocked = 6
+	previously_unlocked = 3
 	#weight multiplier is always 1
 }

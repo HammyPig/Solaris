@@ -30,111 +30,31 @@ tech_interplanetary_commerce = {
 
 # Space Trading
 tech_space_trading = {
-	cost = @tier1cost3
 	area = society
-	tier = 1
-	category = { statecraft }
-	prerequisites = { "tech_interplanetary_commerce" }
-	weight = @tier1weight3
+	weight = 0
 
 	potential = {
-		is_regular_empire = yes
-	}
-
-	weight_modifier = {
-
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_prosperity_adopt
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 # Interstellar Economics
 tech_interstellar_economics = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_space_trading" }
-	weight = @tier3weight1
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_rare_crystals
-				has_technology = tech_rare_crystals
-				has_country_flag = has_market_access
-			}
-		}
-
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_prosperity_adopt
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 # Galactic Markets
 tech_galactic_markets = {
-	cost = @tier4cost1
 	area = society
-	tier = 4
-	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" "tech_interstellar_economics" }
-	weight = @tier4weight1
-	is_rare = yes
-
-	# unlocks Galactic Stock Exchange empire wonder
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-			}
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_galactic_markets }
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_communications < 2
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
@@ -463,49 +383,11 @@ tech_nutrient_replication = {
 
 #Hydroponics
 tech_hydroponics = {
-	cost = @tier1cost1
 	area = society
-	tier = 1
-	category = { biology }
-	prerequisites = { "tech_industrial_farming" }
-	weight = @tier1weight1
+	weight = 0
 
-	# unlock hydroponics buildings
-
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 0.01
-			OR = {
-				is_machine_empire = yes
-				is_lithoid_empire = yes
-			}
-			NOR = {
-				has_country_flag = non_lithoid_subspecies
-				has_valid_civic = civic_machine_servitor
-				has_valid_civic = civic_machine_assimilator
-				any_owned_planet = {
-					OR = {
-						num_districts = { type = district_farming value > 0 }
-						num_districts = { type = district_rw_farming value > 0 }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				is_machine_empire = yes
-				is_lithoid_empire = yes
-			}
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
+	potential = {
+		always = no
 	}
 }
 
@@ -788,86 +670,11 @@ tech_society_3 = {
 
 #Xenology
 tech_alien_life_studies = {
-	cost = @tier1cost2
 	area = society
-	tier = 1
-	category = { biology }
-	weight = @tier1weight2
+	weight = 0
 
 	potential = {
-		is_regular_empire = yes
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			OR = {
-				has_ethic = ethic_xenophile
-				AND = {
-					has_ethic = ethic_xenophobe
-					NOT = { has_ai_personality = xenophobic_isolationists }
-				}
-			}
-
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				has_ethic = ethic_fanatic_xenophile
-				AND = {
-					has_ethic = ethic_fanatic_xenophobe
-					NOT = { has_ai_personality = xenophobic_isolationists }
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					OR = {
-						has_deposit = d_alien_pets_deposit
-						any_owned_pop = {
-							OR = {
-								is_sapient = no
-								is_livestock = yes
-							}
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		factor = @society_research_ai_factor
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_xenophile
-				AND = {
-					has_ethic = ethic_xenophobe
-					NOT = { has_ai_personality = xenophobic_isolationists }
-				}
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_ethic = ethic_fanatic_xenophile
-				AND = {
-					has_ethic = ethic_fanatic_xenophobe
-					NOT = { has_ai_personality = xenophobic_isolationists }
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_country_flag = first_alien_life }
-		}
+		always = no
 	}
 }
 
@@ -1102,64 +909,21 @@ tech_tomb_world_adaption = {
 
 #Frontier Health
 tech_frontier_health = {
-	cost = @tier1cost2
 	area = society
-	tier = 1
-	category = { biology }
-	prerequisites = { "tech_genome_mapping" "tech_colonization_1" }
-	weight = @tier1weight2
+	weight = 0
 
 	potential = {
-		is_regular_empire = yes
-	}
-
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_harmony_adopt
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-		modifier = {
-			factor = 2
-			has_country_flag = payback_researching_gene_clinics
-		}
+		always = no
 	}
 }
 
 #Frontier Hospital
 tech_frontier_hospital = {
-	cost = @tier2cost3
 	area = society
-	tier = 2
-	category = { biology }
-	prerequisites = { "tech_frontier_health" "tech_colonial_centralization" }
-	weight = @tier2weight3
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_exotic_gases
-				has_technology = tech_exotic_gases
-				has_country_flag = has_market_access
-			}
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_harmony_adopt
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
+		always = no
 	}
 }
 
@@ -1168,61 +932,7 @@ tech_mountain_range = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_mountain_range"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_mountain_range"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_volcano = {
@@ -1230,58 +940,7 @@ tech_volcano = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_active_volcano"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_active_volcano"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_dangerous_wildlife = {
@@ -1289,59 +948,7 @@ tech_dangerous_wildlife = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = d_dangerous_wildlife_blocker
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = d_dangerous_wildlife_blocker
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_dense_jungle = {
@@ -1349,58 +956,7 @@ tech_dense_jungle = {
 	area = society
 	tier = 1
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_dense_jungle"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_dense_jungle"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_quicksand_basin = {
@@ -1408,58 +964,7 @@ tech_quicksand_basin = {
 	area = society
 	tier = 1
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_quicksand_basin"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_quicksand_basin"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_noxious_swamp = {
@@ -1467,58 +972,7 @@ tech_noxious_swamp = {
 	area = society
 	tier = 1
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_noxious_swamp"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_noxious_swamp"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_massive_glacier = {
@@ -1526,58 +980,7 @@ tech_massive_glacier = {
 	area = society
 	tier = 1
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_massive_glacier"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_massive_glacier"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_toxic_kelp = {
@@ -1585,58 +988,7 @@ tech_toxic_kelp = {
 	area = society
 	tier = 1
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_toxic_kelp"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_toxic_kelp"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 tech_deep_sinkhole = {
@@ -1644,58 +996,7 @@ tech_deep_sinkhole = {
 	area = society
 	tier = 1
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
-
-	weight_groups = {
-		deposit_blockers
-	}
-	mod_weight_if_group_picked = {
-		deposit_blockers = 0.5
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 4
-			has_ascension_perk = ap_mastery_of_nature
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_deep_sinkhole"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = "d_deep_sinkhole"
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
+	start_tech = yes
 }
 
 # ##################
@@ -1927,128 +1228,21 @@ tech_genome_mapping = {
 
 #Vitality Boosters
 tech_vitality_boosters = {
-	cost = @tier2cost2
 	area = society
-	tier = 2
-	category = { biology }
-	prerequisites = { "tech_genome_mapping" }
-	weight = @tier2weight2
-
-	modifier = {
-		leader_age = 10
-	}
+	weight = 0
 
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-		}
-	}
-
-	weight_modifier = {
-		factor = 1.5	# genetech needs to be a bit more common
-		modifier = {
-			factor = 1.25
-			has_authority = auth_hive_mind
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_supremacy_adopt
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
+		always = no
 	}
 }
 
 #Epigenetic Triggers
 tech_epigenetic_triggers = {
-	cost = @tier2cost2
 	area = society
-	tier = 2
-	category = { biology }
-	prerequisites = { "tech_genome_mapping" }
-	weight = @tier2weight2
-
-	feature_flags = {
-		uplifting
-	}
+	weight = 0
 
 	potential = {
-		NOT = {
-			has_valid_civic = civic_fanatic_purifiers
-			#has_valid_civic = civic_machine_terminator # covered by not being machine
-			#has_valid_civic = civic_hive_devouring_swarm # can uplift to make delicious
-		}
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
-	}
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_EPIGENETICS_TITLE"
-			desc = "TECH_UNLOCK_EPIGENETICS_DESC"
-		}
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				has_country_flag = found_presapients
-				any_planet_within_border = {
-					any_owned_pop = {
-						is_sapient = no
-					}
-				}
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
+		always = no
 	}
 }
 
@@ -2205,72 +1399,11 @@ tech_gene_seed_purification = {
 }
 
 tech_morphogenetic_field_mastery = {
-	cost = @tier4cost1
 	area = society
-	category = { biology }
-	tier = 4
-	is_rare = yes
-	prerequisites = { "tech_epigenetic_triggers" }
-	weight = @tier4weight1
-
-	# unlocks xeno-armies
+	weight = 0
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0
-			has_authority = auth_machine_intelligence
-		}
-		modifier = {
-			factor = 1.25
-			has_authority = auth_hive_mind
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 0.20
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-			}
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_morphogenetic_field_mastery }
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_trait_in_council = { TRAIT = leader_trait_maniacal }
-				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
-				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
-			}
-		}
+		always = no
 	}
 }
 
@@ -2339,308 +1472,38 @@ tech_gene_tailoring = {
 
 # Glandular Acclimation (planet preference modding)
 tech_glandular_acclimation = {
-	cost = @tier3cost3
 	area = society
-	tier = 3
-	category = { biology }
-	prerequisites = { "tech_gene_tailoring" }
-	weight = @tier3weight3
-
-	feature_flags = {
-		habitability_gene_modding # No longer does anything except make a tooltip, handled in game rules ("can_gene_mod_habitability")
-	}
+	weight = 0
 
 	potential = {
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_civic = civic_machine_assimilator
-			has_civic = civic_machine_servitor
-		}
-	}
-
-	weight_modifier = {
-		factor = 1.5	# genetech needs to be a bit more common
-		modifier = {
-			factor = 1.25
-			has_authority = auth_hive_mind
-		}
-		modifier = {
-			factor = 1.25
-			has_origin = origin_necrophage
-			has_trait = trait_necrophage
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 2
-			has_origin = origin_necrophage
-			has_trait = trait_necrophage
-		}
+		always = no
 	}
 }
 
 tech_lithoid_transgenesis = {
-	cost = @tier5cost1
 	area = society
-	tier = 5
-	is_rare = yes
-	weight = @tier5weight1
-	category = { biology }
+	weight = 0
 
-	gateway = biological
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_LITHOID_GENETICS_TITLE"
-			desc = "TECH_UNLOCK_LITHOID_GENETICS_DESC"
-		}
-	}
-
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 0
-			has_lithoids = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				has_active_tradition = tr_genetics_finish_extra_traits
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_species = {
-					is_species_class = LITHOID
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_lithoid_transgenesis }
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_plantoid_transgenesis = {
-	cost = @tier5cost1
 	area = society
-	tier = 5
-	is_rare = yes
-	weight = @tier5weight1
-	category = { biology }
+	weight = 0
 
-	gateway = biological
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_PLANTOID_GENETICS_TITLE"
-			desc = "TECH_UNLOCK_PLANTOID_GENETICS_DESC"
-		}
-	}
-
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 0
-			has_plantoids = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				has_active_tradition = tr_genetics_finish_extra_traits
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_species = {
-					OR = {
-						is_species_class = PLANT
-						is_species_class = FUN
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_plantoid_transgenesis }
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_leviathan_transgenesis = {
-	cost = @tier5cost1
 	area = society
-	tier = 5
-	is_rare = yes
-	weight = @tier5weight1
-	category = { biology }
+	weight = 0
 
-	gateway = biological
-
-	prereqfor_desc = {
-		custom = {
-			title = "TECH_UNLOCK_LEVIATHAN_GENETICS_TITLE"
-			desc = "TECH_UNLOCK_LEVIATHAN_GENETICS_DESC"
-		}
-	}
-
-	weight_modifier = {
-		factor = 2
-		modifier = {
-			factor = 0
-			has_space_monster_dlc = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				has_active_tradition = tr_genetics_finish_extra_traits
-			}
-		}
-		modifier = {
-			factor = 0
-			harvested_leviathan_dna = no
-		}
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_leviathan_transgenesis }
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0.5
-			has_ethic = ethic_fanatic_xenophobe
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_xenophile
-		}
+	potential = {
+		always = no
 	}
 }
 
@@ -2709,123 +1572,21 @@ tech_gene_expressions = {
 
 #Selected Lineages
 tech_selected_lineages = {
-	cost = @tier3cost2
 	area = society
-	category = { biology }
-	tier = 3
-	is_rare = yes
-	prerequisites = { "tech_vitality_boosters" }
-	weight = @tier3weight2
-
-	# Modifiers from this tech is added through a policy-option
+	weight = 0
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.50
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
-			}
-		}
-		modifier = {
-			factor = 0
-			has_ethic = "ethic_fanatic_egalitarian"
-		}
-		modifier = {
-			factor = 0.25
-			is_egalitarian = yes
-		}
-		modifier = {
-			factor = 2
-			is_authoritarian = yes
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_selected_lineages }
-			}
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 0
-			has_ethic = ethic_fanatic_egalitarian
-		}
+		always = no
 	}
 }
 
 #Capacity Boosters
 tech_capacity_boosters = {
-	cost = @tier4cost3
 	area = society
-	category = { biology }
-	tier = 4
-	is_rare = yes
-	prerequisites = { "tech_selected_lineages" }
-	weight = @tier4weight3
-
-	# Modifiers from this tech is added through a policy-option
+	weight = 0
 
 	potential = {
-		NOT = { has_authority = auth_machine_intelligence }
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.20
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
-			}
-		}
-		modifier = {
-			factor = 0
-			is_egalitarian = yes
-		}
-		modifier = {
-			factor = 2
-			is_authoritarian = yes
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_capacity_boosters }
-			}
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
+		always = no
 	}
 }
 
@@ -2857,7 +1618,7 @@ tech_doctrine_fleet_size_1 = {
 	weight = @tier2weight1
 
 	modifier = {
-		command_limit_add = 20
+		command_limit_add = 10
 	}
 
 	weight_modifier = {
@@ -2981,7 +1742,7 @@ tech_doctrine_fleet_size_5 = {
 	weight = @tier4weight3
 
 	modifier = {
-		command_limit_add = 20
+		command_limit_add = 30
 	}
 
 	weight_modifier = {
@@ -3004,91 +1765,32 @@ tech_doctrine_fleet_size_5 = {
 
 #Interstellar Fleet Traditions
 tech_interstellar_fleet_traditions = {
-	cost = @tier2cost2
 	area = society
-	tier = 2
-	category = { military_theory }
-	prerequisites = {}
-	weight = @tier2weight2
+	weight = 0
 
-	weight_modifier = {
-		factor = 3
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
+	potential = {
+		always = no
 	}
 }
 
 #Refit Standards
 tech_refit_standards = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { military_theory }
-	prerequisites = { "tech_interstellar_fleet_traditions" }
-	weight = @tier3weight1
+	weight = 0
 
-	modifier = {
-		starbase_shipyard_build_speed_mult = 0.10
-		ships_upkeep_mult = -0.05
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
+	potential = {
+		always = no
 	}
 }
 
 
 # Command Matrix
 tech_command_matrix = {
-	cost = @tier3cost3
 	area = society
-	tier = 3
-	category = { military_theory }
-	prerequisites = { "tech_refit_standards" }
-	weight = @tier3weight3
+	weight = 0
 
-	modifier = {
-		ship_fire_rate_mult = 0.05
-	}
-
-	weight_modifier = {
-		factor = 3
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
+	potential = {
+		always = no
 	}
 }
 
@@ -3102,7 +1804,7 @@ tech_doctrine_navy_size_1 = {
 	weight = @tier2weight2
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 10
 	}
 
 	weight_modifier = {
@@ -3133,7 +1835,7 @@ tech_doctrine_navy_size_2 = {
 	weight = @tier3weight2
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 20
 	}
 
 	weight_modifier = {
@@ -3164,7 +1866,7 @@ tech_doctrine_navy_size_3 = {
 	weight = @tier4weight1
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 50
 	}
 
 	weight_modifier = {
@@ -3195,7 +1897,7 @@ tech_doctrine_navy_size_4 = {
 	weight = @tier4weight3
 
 	modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 100
 	}
 
 	weight_modifier = {
@@ -3221,32 +1923,11 @@ tech_doctrine_navy_size_4 = {
 # Army Organization
 # ##################
 tech_centralized_command = {
-	cost = @tier2cost2
 	area = society
-	tier = 2
-	category = { military_theory }
-	weight = @tier2weight2
+	weight = 0
 
-	# unlocks military academy
-
-	modifier = {
-		country_occupation_armies_add = 2
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-
+	potential = {
+		always = no
 	}
 }
 
@@ -3256,7 +1937,6 @@ tech_combat_training = {
 	area = society
 	tier = 3
 	category = { military_theory }
-	prerequisites = { "tech_centralized_command" }
 	weight = @tier3weight1
 
 	modifier = {
@@ -4174,348 +2854,77 @@ tech_planetary_infrastructure_2 = {
 
 #Subdermal Implants
 tech_subdermal_stimulation = {
-	cost = @tier2cost2
 	area = society
-	tier = 2
-	category = { biology }
-	prerequisites = { "tech_genome_mapping" }
-	weight = @tier2weight2
-	is_rare = yes
-
-	# unlocks Chemical Bliss living standard
-
-	feature_flags = {
-		bliss_standard
-	}
+	weight = 0
 
 	potential = {
-		NOR = {
-			has_ethic = ethic_gestalt_consciousness
-			has_civic = civic_dystopian_society
-		}
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 1.25
-			NOR = {
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-			}
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_subdermal_stimulation }
-			}
-		}
-		modifier = {
-			factor = 2
-			has_relic = r_pox_sample
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 3
-			NOR = {
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-			}
-		}
+		always = no
 	}
 }
 
 tech_tracking_implants = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
-	category = { statecraft }
-	prerequisites = { "tech_subdermal_stimulation" "tech_galactic_bureaucracy" }
-	is_rare = yes
-	weight = @tier4weight2
+	weight = 0
 
-	# Unlocks tracking implants edict
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.20
-			NOR = {
-				has_modifier = "curator_insight"
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
-			}
-		}
-		modifier = {
-			factor = 2
-			is_materialist = yes
-			is_authoritarian = yes
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_tracking_implants }
-			}
-		}
-
-	}
-
-	ai_weight = {
-
+	potential = {
+		always = no
 	}
 }
 
 #Global Manufacturing
 tech_global_production_strategy = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_alloys_1" "tech_colonial_centralization" }
-	weight = @tier3weight1
+	weight = 0
 
-	# unlocks Ministry of Production
-
-	weight_modifier = {
-		factor = 1.5
-		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = "tech_luxuries_1"
-				country_uses_consumer_goods = no
-			}
-		}
-
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = prospectorium }
-		}
-	}
-
-	ai_weight = {
-
+	potential = {
+		always = no
 	}
 }
 
 #Adaptive Bureaucracy
 tech_adaptive_bureaucracy = {
-	cost = @tier1cost2
 	area = society
-	tier = 1
-	category = { statecraft }
-	prerequisites = { "tech_planetary_unification" }
-	weight = @tier1weight2
+	weight = 0
 
-	gateway = espionage
-
-	modifier = {
-		country_edict_fund_add = 20
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0.5
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 3
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 4
-		}
-
-	}
-
-	ai_weight = {
-
+	potential = {
+		always = no
 	}
 }
 
 tech_effective_bureaucracy = {
-	cost = @tier2cost1
 	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_adaptive_bureaucracy" }
-	weight = @tier2weight1
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	modifier = {
-		country_edict_fund_add = 20
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0.5
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 3
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 4
-		}
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 tech_colonial_bureaucracy = {
-	cost = @tier2cost1
 	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_adaptive_bureaucracy" }
-	weight = @tier2weight1
+	weight = 0
 
-	gateway = espionage
-
-	modifier = {
-		country_edict_fund_add = 20
-		add_base_country_intel = 10
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 3
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 4
-		}
-
-	}
-
-	ai_weight = {
-
+	potential = {
+		always = no
 	}
 }
 
 tech_galactic_bureaucracy = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_colonial_bureaucracy" }
-	weight = @tier3weight1
+	weight = 0
 
-	modifier = {
-		country_edict_fund_add = 20
-		add_base_country_intel = 10
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 2
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 3
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 4
-		}
-
-	}
-
-	ai_weight = {
-
+	potential = {
+		always = no
 	}
 }
 
 #Living State
 tech_living_state = {
-	cost = @tier2cost3
 	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier2weight3
+	weight = 0
 
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
-	}
-
-	modifier = {
-		pop_factions_unity_produces_mult = 0.1
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0.5
-			num_owned_planets < 5
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 5
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 6
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 7
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-			}
-		}
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
@@ -4572,152 +2981,31 @@ tech_collective_self = {
 
 # Autonomous Agents
 tech_autonomous_agents = {
-	cost = @tier2cost3
 	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier2weight3
+	weight = 0
 
 	potential = {
-		has_ethic = ethic_gestalt_consciousness
-	}
-
-	modifier = {
-		country_tech_influence_produces_add = 1
-		envoys_add = 1
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0.5
-			num_owned_planets < 5
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 5
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 6
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 7
-		}
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 #Embodied Dynamism
 tech_embodied_dynamism = {
-	cost = @tier3cost3
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_autonomous_agents" }
-	weight = @tier3weight3
-
-	modifier = {
-		country_leader_cap_add = 1
-		external_leader_pool_add = 1
-		leaders_upkeep_mult = -0.10
-		envoys_add = 1
-	}
+	weight = 0
 
 	potential = {
-		has_ethic = ethic_gestalt_consciousness
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0.5
-			num_owned_planets < 7
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 8
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 9
-		}
-		modifier = {
-			factor = 1.5
-			num_owned_planets > 10
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 #Neural Implants
 tech_neural_implants = {
-	cost = @tier1cost3
 	area = society
-	tier = 1
-	category = { statecraft }
-	weight = @tier1weight3
-
-	# unlocks slave processing plant, slave armies
+	weight = 0
 
 	potential = {
-		is_regular_empire = yes
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.5
-			count_owned_pop = {
-				limit = {
-					is_enslaved = yes
-				}
-				count > 9
-			}
-		}
-		modifier = {
-			factor = 2
-			count_owned_pop = {
-				limit = {
-					is_enslaved = yes
-				}
-				count > 19
-			}
-		}
-		modifier = {
-			factor = 2
-			count_owned_pop = {
-				limit = {
-					is_enslaved = yes
-				}
-				count > 29
-			}
-		}
-
-		modifier = {
-			factor = 0.0
-			OR = {
-				allows_slavery = no
-				NOT = { any_owned_pop = { is_enslaved = yes } }
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-			}
-		}
-
+		always = no
 	}
 }
 
@@ -4727,134 +3015,51 @@ tech_neural_implants = {
 
 #Artificial Moral Codes
 tech_artificial_moral_codes = {
-	cost = @tier2cost3
 	area = society
-	tier = 2
-	category = { statecraft }
-	weight = @tier2weight3
-
-	modifier = {
-		planet_crime_mult = -0.15
-		planet_amenities_mult = 0.05
-	}
+	weight = 0
 
 	potential = {
-		NOT = { has_ethic = ethic_gestalt_consciousness }
-	}
-
-	weight_modifier = {
-		factor = 1.5
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 #Synthetic Thought Patterns
 tech_synthetic_thought_patterns = {
-	cost = @tier3cost3
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_artificial_moral_codes" }
-	weight = @tier3weight3
-
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-	}
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		factor = 1.5
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 #Unity of Purpose
 tech_unity_of_purpose = {
-	cost = @tier2cost3
 	area = society
-	tier = 2
-	category = { statecraft }
-	weight = @tier2weight3
-
-	modifier = {
-		planet_crime_no_happiness_mult = -0.15
-		planet_amenities_no_happiness_mult = 0.05
-	}
+	weight = 0
 
 	potential = {
-		is_gestalt = yes
-	}
-
-	weight_modifier = {
-		factor = 1.5
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 # Collective Production Methods
 tech_collective_production_methods = {
-	cost = @tier3cost3
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_unity_of_purpose" }
-	weight = @tier3weight1
-
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-	}
+	weight = 0
 
 	potential = {
-		has_authority = auth_hive_mind
-	}
-
-	weight_modifier = {
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 # Resource Processing Algorithms
 tech_resource_processing_algorithms = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_unity_of_purpose" }
-	weight = @tier3weight1
-
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-	}
+	weight = 0
 
 	potential = {
-		has_authority = auth_machine_intelligence
-	}
-
-	weight_modifier = {
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
@@ -4905,38 +3110,11 @@ tech_hyper_entertainment_forum = {
 }
 
 tech_paradise_dome = {
-	cost = @tier3cost1
 	area = society
-	category = { statecraft }
-	tier = 3
-	prerequisites = { "tech_housing_1" }
-	weight = @tier3weight1
+	weight = 0
 
 	potential = {
-		OR = {
-			is_gestalt = no
-			has_valid_civic = civic_machine_servitor
-		}
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_rare_crystals
-				has_technology = tech_rare_crystals
-				has_country_flag = has_market_access
-			}
-		}
-
-	}
-
-	ai_weight = {
-
-		modifier = {
-			factor = @housing_ai_tech_factor
-			num_pops >= 100
-		}
+		always = no
 	}
 }
 
@@ -5015,27 +3193,11 @@ tech_hypercomms_forum = {
 }
 
 tech_autocurating_vault = {
-	cost = @tier3cost1
 	area = society
-	category = { statecraft }
-	tier = 3
-	prerequisites = { "tech_administrative_ai" "tech_colonial_centralization"}
-	weight = @tier3weight1
+	weight = 0
 
 	potential = {
-		NOR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-			has_valid_civic = civic_machine_servitor
-		}
-	}
-
-	weight_modifier = {
-
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
@@ -5279,282 +3441,59 @@ tech_psionic_shield = {
 
 # Penal Colonies
 tech_penal_colonies = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_artificial_moral_codes" }
-	weight = @tier3weight1
-	is_rare = yes
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-			}
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_penal_colonies }
-			}
-		}
-
-		modifier = {
-			factor = 2
-			is_authoritarian = yes
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 # Resort Colonies
 tech_resort_colonies = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_artificial_moral_codes" }
-	weight = @tier3weight1
-	is_rare = yes
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-			}
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_resort_colonies }
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 
 # Slave Colonies
 tech_slave_colonies = {
-	cost = @tier2cost3
 	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_neural_implants" }
-	weight = @tier2weight3
+	weight = 0
 
 	potential = {
-		is_gestalt = no
-	}
-
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-			}
-		}
-
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 0.0
-			OR = {
-				allows_slavery = no
-				NOT = { any_owned_pop = { is_enslaved = yes } }
-			}
-		}
-	}
-
-	ai_weight = {
-
+		always = no
 	}
 }
 
 tech_housing_agrarian_idyll = {
-	cost = @tier3cost1
 	area = society
-	tier = 3
-	category = { statecraft }
-	weight = @tier3weight1
+	weight = 0
 
-	modifier = {
-		description = district_housing_agrarian_idyll_tech_effect
-	}
-
-	weight_modifier = {
-		factor = 1.5
-		modifier = {
-			factor = 0
-			NOT = { has_valid_civic = civic_agrarian_idyll }
-		}
-
-	}
-
-	ai_weight = {
-
-		modifier = {
-			factor = @housing_ai_tech_factor
-			num_pops >= 100
-		}
+	potential = {
+		always = no
 	}
 }
 
 tech_xeno_diplomacy = {
-	cost = @tier2cost2
 	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier2weight1
+	weight = 0
 
 	potential = {
-		is_regular_empire = yes
-	}
-
-	modifier = {
-		diplo_weight_mult = 0.1
-	}
-
-	## unlock embassy building and edict
-
-	weight_modifier = {
-		factor = 2
-
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = 2
-			is_galactic_community_member = yes
-		}
-		modifier = {
-			factor = 0.01
-			has_civic = civic_inwards_perfection
-		}
-	}
-
-	ai_weight = {
-
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = 0.01
-			has_civic = civic_inwards_perfection
-		}
+		always = no
 	}
 }
 
 tech_xeno_relations = {
-	cost = @tier3cost2
 	area = society
-	tier = 3
-	category = { statecraft }
-	prerequisites = { "tech_xeno_diplomacy" "tech_galactic_administration" }
-	weight = @tier3weight1
+	weight = 0
 
 	potential = {
-		is_regular_empire = yes
-	}
-
-	modifier = {
-		diplo_weight_mult = 0.1
-	}
-
-	## unlock embassy building upgrade
-
-	weight_modifier = {
-		factor = 2
-
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = 2
-			is_galactic_community_member = yes
-		}
-		modifier = {
-			factor = 0.01
-			has_civic = civic_inwards_perfection
-		}
-	}
-
-	ai_weight = {
-
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
-		}
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_xenophile
-		}
-		modifier = {
-			factor = 0.01
-			has_civic = civic_inwards_perfection
-		}
+		always = no
 	}
 }
 
@@ -5715,38 +3654,11 @@ tech_covenant_whisperers = {
 }
 
 tech_xeno_linguistics = {
-	cost = @tier1cost2
 	area = society
-	tier = 1
-	category = { statecraft }
 	weight = 0
-	icon = tech_xeno_linguistics
-	is_rare = yes
 
 	potential = {
-		has_paragon_dlc = yes
-		is_regular_empire = yes
-		is_gestalt = no
-		is_homicidal = no
-	}
-
-	modifier = {
-		first_contact_speed_mult = 0.2
-		show_only_custom_tooltip = no
-		custom_tooltip = tech_xeno_linguistics_effect
-	}
-
-	weight_modifier = {
-		factor = 0
-		modifier = {
-			add = 100
-			AND = {
-				is_regular_empire = yes
-				is_homicidal = no
-				is_gestalt = no
-				perc_communications_with_playable > 0
-			}
-		}
+		always = no
 	}
 }
 
