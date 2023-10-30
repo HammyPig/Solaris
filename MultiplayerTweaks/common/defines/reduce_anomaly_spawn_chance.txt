@@ -1,4 +1,4 @@
 	NGameplay = {
-		ANOMALY_SPAWN_CHANCE					= 0.025 # Percent chance that a planet gets a discovery when surveyed
-		ANOMALY_SPAWN_CHANCE_INCREMENT			= 0.003 # Percentage increase towards next chance when failing	
+		ANOMALY_SPAWN_CHANCE					= 0.013 # Percent chance that a planet gets a discovery when surveyed
+		ANOMALY_SPAWN_CHANCE_INCREMENT			= 0.001 # Percentage increase towards next chance when failing
 	}
