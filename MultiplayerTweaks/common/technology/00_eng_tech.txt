@@ -1615,7 +1615,7 @@ tech_advanced_metallurgy_1 = {
 	area = engineering
 	tier = 2
 	category = { materials }
-	prerequisites = { "tech_alloys_1" "tech_ship_armor_2" }
+	prerequisites = { "tech_ship_armor_2" }
 	weight = @tier2weight1
 
 	modifier = {
@@ -1637,7 +1637,7 @@ tech_advanced_metallurgy_2 = {
 	area = engineering
 	tier = 4
 	category = { materials }
-	prerequisites = { "tech_advanced_metallurgy_1" "tech_alloys_2" "tech_ship_armor_4" }
+	prerequisites = { "tech_advanced_metallurgy_1" "tech_ship_armor_4" }
 	weight = @tier4weight1
 
 	modifier = {

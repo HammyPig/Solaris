@@ -625,7 +625,7 @@ tech_consumer_good_refinement_1 = {
 	area = physics
 	tier = 2
 	category = { computing }
-	prerequisites = { "tech_luxuries_1" "tech_administrative_ai" }
+	prerequisites = { "tech_administrative_ai" }
 	weight = @tier2weight1
 
 	modifier = {
@@ -654,7 +654,7 @@ tech_consumer_good_refinement_2 = {
 	area = physics
 	tier = 4
 	category = { computing }
-	prerequisites = { "tech_luxuries_2" "tech_consumer_good_refinement_1" "tech_self_aware_logic" }
+	prerequisites = { "tech_consumer_good_refinement_1" "tech_self_aware_logic" }
 	weight = @tier4weight1
 
 	modifier = {
