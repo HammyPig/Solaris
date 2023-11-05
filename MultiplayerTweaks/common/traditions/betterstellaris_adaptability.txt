@@ -1,0 +1,77 @@
+betterstellaris_tr_adaptability_adopt = {
+	modifier = {
+		country_leader_cap_add = 1
+	}
+}
+
+betterstellaris_tr_adaptability_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+betterstellaris_tr_adaptability_science_division = {
+	modifier = {
+		num_tech_alternatives_add = 1
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+betterstellaris_tr_adaptability_faith_in_science = {
+	possible = {
+		has_tradition = betterstellaris_tr_adaptability_science_division
+	}
+
+	modifier = {
+		planet_researchers_upkeep_mult = -0.20
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+betterstellaris_tr_adaptability_polytechnic_education = {
+	possible = {
+		has_tradition = betterstellaris_tr_adaptability_faith_in_science
+	}
+
+	modifier = {
+		all_technology_research_speed = 0.10
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+betterstellaris_tr_adaptability_state_of_emergency = {
+	modifier = {
+		starbase_defensive_war_ship_build_speed_mult = 0.33
+		ship_home_territory_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+betterstellaris_tr_adaptability_defensive_zeal = {
+	possible = {
+		has_tradition = betterstellaris_tr_adaptability_state_of_emergency
+	}
+
+	modifier = {
+		shipclass_starbase_damage_mult = 0.33
+		shipclass_starbase_hull_mult = 0.33
+		shipclass_military_station_damage_mult = 0.33
+		shipclass_military_station_hull_mult = 0.33
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

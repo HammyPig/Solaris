@@ -1,0 +1,80 @@
+﻿l_english:
+################################################################
+# ADAPTABILITY
+################################################################
+
+ betterstellaris_tradition_adaptability:0 "Adaptability"
+ betterstellaris_tradition_adaptability_desc:0 "To adapt is to survive, and surpass."
+ betterstellaris_tr_adaptability_adopt:0 "Adaptability Traditions"
+
+ betterstellaris_tr_adaptability_state_of_emergency:0 "State of Emergency"
+
+ betterstellaris_tr_adaptability_defensive_zeal:0 "Defensive Zeal"
+
+ betterstellaris_tr_adaptability_science_division:0 "Science Division"
+
+ betterstellaris_tr_adaptability_faith_in_science:0 "Faith in Science"
+
+ betterstellaris_tr_adaptability_polytechnic_education:0 "Polytechnic Education"
+
+ betterstellaris_tr_adaptability_finish:0 "Adaptability Traditions Finished"
+
+################################################################
+# EXPANSION
+################################################################
+
+ betterstellaris_tradition_expansion:0 "Expansion"
+ betterstellaris_tradition_expansion_desc:0 "We must expand our civilization to new systems, or risk eventual extinction."
+ betterstellaris_tr_expansion_adopt:0 "Expansion Traditions"
+
+ betterstellaris_tr_expansion_databank_uplinks:0 "Databank Uplinks"
+
+ betterstellaris_tr_expansion_asteroid_mining_rush:0 "Asteroid Mining Rush"
+
+ betterstellaris_tr_expansion_protect_what_is_ours:0 "Protect What is Ours"
+
+ betterstellaris_tr_expansion_galactic_ambition:0 "Galactic Ambition"
+ 
+ betterstellaris_tr_expansion_courier_network:0 "Courier Network"
+
+ betterstellaris_tr_expansion_finish:0 "Expansion Traditions Finished"
+
+################################################################
+# PROSPERITY
+################################################################
+
+ betterstellaris_tradition_prosperity:0 "Prosperity"
+ betterstellaris_tradition_prosperity_desc:0 "There is no better indicator of the success or failure of a star nation than the strength of its lands and people."
+ betterstellaris_tr_prosperity_adopt:0 "Prosperity Traditions"
+
+ betterstellaris_tr_prosperity_a_new_life:0 "A New Life"
+
+ betterstellaris_tr_prosperity_kinship:0 "Kinship"
+
+ betterstellaris_tr_prosperity_environmental_diversification:0 "Environmental Diversification"
+
+ betterstellaris_tr_prosperity_galactic_basic_income:0 "Galactic Basic Income"
+
+ betterstellaris_tr_prosperity_administrative_operations:0 "Administrative Operations"
+
+ betterstellaris_tr_prosperity_finish:0 "Prosperity Traditions Finished"
+
+################################################################
+# SUPREMACY
+################################################################
+
+ betterstellaris_tradition_supremacy:0 "Supremacy"
+ betterstellaris_tradition_supremacy_desc:0 "The future of this galaxy belongs to those who are strong enough to seize it."
+ betterstellaris_tr_supremacy_adopt:0 "Supremacy Traditions"
+
+ betterstellaris_tr_supremacy_master_shipwrights:0 "Master Shipwrights"
+
+ betterstellaris_tr_supremacy_fleet_logistical_corps:0 "Fleet Logistics Corps"
+
+ betterstellaris_tr_supremacy_war_games:0 "War Games"
+
+ betterstellaris_tr_supremacy_overwhelming_force:0 "Overwhelming Force"
+
+ betterstellaris_tr_supremacy_great_game:0 "The Great Game"
+
+ betterstellaris_tr_supremacy_finish:0 "Supremacy Traditions Finished"

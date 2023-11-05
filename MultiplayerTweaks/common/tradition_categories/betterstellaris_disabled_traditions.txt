@@ -1,0 +1,375 @@
+tradition_adaptability = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_adaptability_adopt"
+	finish_bonus = "tr_adaptability_finish"
+	traditions = {
+		"tr_adaptability_recycling"
+		"tr_adaptability_survival_fittest"
+		"tr_adaptability_environmental_diversification"
+		"tr_adaptability_adaptive_ecology"
+		"tr_adaptability_appropriation"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_aptitude = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_aptitude_adopt"
+	finish_bonus = "tr_aptitude_finish"
+	traditions = {
+		"tr_aptitude_the_empire_needs_you"
+		"tr_aptitude_specialist_training"
+		"tr_aptitude_psychological_profiling"
+		"tr_aptitude_healthcare_program"
+		"tr_aptitude_champions_of_the_empire"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_diplomacy = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_diplomacy_adopt"
+	finish_bonus = "tr_diplomacy_finish"
+	traditions = {
+		"tr_diplomacy_the_federation"
+		"tr_diplomacy_entente_coordination"
+		"tr_diplomacy_diplomatic_networking"
+		"tr_diplomacy_direct_diplomacy"
+		"tr_diplomacy_eminent_diplomats"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_discovery = {
+	tree_template = "tree_11_111"
+	adoption_bonus = "tr_discovery_adopt"
+	finish_bonus = "tr_discovery_finish"
+	traditions = {
+		"tr_discovery_to_boldly_go"
+		"tr_discovery_databank_uplinks"
+		"tr_discovery_science_division"
+		"tr_discovery_polytechnic_education"
+		"tr_discovery_faith_in_science"
+	}
+
+    potential = {
+		always = no
+	}
+}
+
+tradition_domination = {
+	tree_template = "tree_21_11"
+	adoption_bonus = "tr_domination_adopt"
+	finish_bonus = "tr_domination_finish"
+	traditions = {
+		"tr_domination_colonial_viceroys"
+		"tr_domination_imperious_architecture"
+		"tr_domination_judgment_corps"
+		"tr_domination_grand_council"
+		"tr_domination_workplace_motivators"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_enmity = {
+	tree_template = "tree_11_111"
+	adoption_bonus = "tr_enmity_adopt"
+	finish_bonus = "tr_enmity_finish"
+	traditions = {
+		"tr_enmity_rise_to_the_occasion"
+		"tr_enmity_consumate_contrarian"
+		"tr_enmity_match"
+		"tr_enmity_outpace"
+		"tr_enmity_eclipse"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_expansion = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_expansion_adopt"
+	finish_bonus = "tr_expansion_finish"
+	traditions = {
+		"tr_expansion_reach_for_the_stars"
+		"tr_expansion_colonization_fever"
+		"tr_expansion_courier_network"
+		"tr_expansion_galactic_ambition"
+		"tr_expansion_a_new_life"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_harmony = {
+	tree_template = "tree_21_11"
+	adoption_bonus = "tr_harmony_adopt"
+	finish_bonus = "tr_harmony_finish"
+	traditions = {
+		"tr_harmony_mind_and_body"
+		"tr_harmony_kinship"
+		"tr_harmony_the_greater_good"
+		"tr_harmony_harmonious_directives"
+		"tr_harmony_utopian_dream"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_mercantile = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_mercantile_adopt"
+	finish_bonus = "tr_mercantile_finish"
+	traditions = {
+		"tr_mercantile_trickle_up_economics"
+		"tr_mercantile_commercial_enterprise"
+		"tr_mercantile_adaptive_economic_policies"
+		"tr_mercantile_marketplace_of_better_ideas"
+		"tr_mercantile_insider_trading"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_politics = {
+	tree_template = "tree_11_11_21"
+	adoption_bonus = "tr_politics_adopt"
+	finish_bonus = "tr_politics_finish"
+	traditions = {
+		"tr_politics_quid_pro_quo"
+		"tr_politics_gravitas"
+		"tr_politics_national_agenda"
+		"tr_politics_persistent_petitioners"
+		"tr_politics_extraordinary_powers"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_prosperity = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_prosperity_adopt"
+	finish_bonus = "tr_prosperity_finish"
+	traditions = {
+		"tr_prosperity_administrative_operations"
+		"tr_prosperity_sct"
+		"tr_prosperity_pursuit_of_profit"
+		"tr_prosperity_interstellar_franchising"
+		"tr_prosperity_public_works"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_statecraft = {
+	tree_template = "tree_111_11"
+	adoption_bonus = "tr_statecraft_adopt"
+	finish_bonus = "tr_statecraft_finish"
+	traditions = {
+		"tr_statecraft_constitutional_focus"
+		"tr_statecraft_inspiring_agendas"
+		"tr_statecraft_immutable_directives"
+		"tr_statecraft_amongst_peers"
+		"tr_statecraft_shared_benefits"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_subterfuge = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "tr_subterfuge_adopt"
+	finish_bonus = "tr_subterfuge_finish"
+	traditions = {
+		"tr_subterfuge_information_security"
+		"tr_subterfuge_operational_security"
+		"tr_subterfuge_nda"
+		"tr_subterfuge_double_agents"
+		"tr_subterfuge_shadow_recruits"
+	}
+
+    potential = {
+		always = no
+	}
+}
+
+tradition_supremacy = {
+	tree_template = "tree_21_11"
+	adoption_bonus = "tr_supremacy_adopt"
+	finish_bonus = "tr_supremacy_finish"
+	traditions = {
+		"tr_supremacy_master_shipwrights"
+		"tr_supremacy_fleet_logistical_corps"
+		"tr_supremacy_overwhelming_force"
+		"tr_supremacy_war_games"
+		"tr_supremacy_great_game"
+	}
+
+    potential = {
+		always = no
+	}
+}
+
+tradition_synchronicity = {
+	tree_template = "tree_21_11"
+	adoption_bonus = "tr_synchronicity_adopt"
+	finish_bonus = "tr_synchronicity_finish"
+	traditions = {
+		"tr_synchronicity_cloned_organs"
+		"tr_synchronicity_kinship_gestalt"
+		"tr_synchronicity_integrated_preservation"
+		"tr_synchronicity_harmonious_directives"
+		"tr_synchronicity_collective_reasoning"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_unyielding = {
+	tree_template = "tree_111_11"
+	adoption_bonus = "tr_unyielding_adopt"
+	finish_bonus = "tr_unyielding_finish"
+	traditions = {
+		"tr_unyielding_resistance_is_frugal"
+		"tr_unyielding_never_surrender"
+		"tr_unyielding_bulwark_of_harmony"
+		"tr_unyielding_defensive_zeal"
+		"tr_unyielding_fortress_doctrine"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_versatility = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_versatility_adopt"
+	finish_bonus = "tr_versatility_finish"
+	traditions = {
+		"tr_versatility_universal_compatibility"
+		"tr_versatility_adaptive_programming"
+		"tr_versatility_spatial_optimization"
+		"tr_versatility_material_analysis"
+		"tr_versatility_operational_proxies"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_cybernetics_assimilator = {
+	tree_template = "tree_12_11_11"
+	adoption_bonus = "tr_cybernetics_assimilator_adopt"
+	finish_bonus = "tr_cybernetics_assimilator_finish"
+
+	traditions = {
+		"tr_cybernetics_assimilator_inevitable_assimilation"
+		"tr_cybernetics_assimilator_metabolic_reprocessing"
+		"tr_cybernetics_assimilator_integrated_anatomy"
+		"tr_cybernetics_assimilator_crucible"
+		"tr_cybernetics_assimilator_modular_cybernetics"
+	}
+
+    potential = {
+		always = no
+	}
+}
+
+tradition_cybernetics = {
+	tree_template = "tree_12_11_11"
+	adoption_bonus = "tr_cybernetics_adopt"
+	finish_bonus = "tr_cybernetics_finish"
+
+	traditions = {
+		"tr_cybernetics_transubstantiation_synthesis"
+		"tr_cybernetics_metabolic_reprocessing"
+		"tr_cybernetics_integrated_anatomy"
+		"tr_cybernetics_assembly_standards"
+		"tr_cybernetics_modular_cybernetics"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_genetics = {
+	tree_template = "tree_111_11"
+	adoption_bonus = "tr_genetics_adopt"
+	finish_bonus = "tr_genetics_finish"
+	traditions = {
+		"tr_genetics_resequencing"
+		"tr_genetics_creation"
+		"tr_genetics_enhanced_expression"
+		"tr_genetics_efficient_cloning"
+		"tr_genetics_retrovirus"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_psionics = {
+	tree_template = "tree_21_12"
+	adoption_bonus = "tr_psionics_adopt"
+	finish_bonus = "tr_psionics_finish"
+	traditions = {
+		"tr_psionics_psi_corps"
+		"tr_psionics_mind_readers"
+		"tr_psionics_psionic_assimilation"
+		"tr_psionics_breach_shroud"
+		"tr_psionics_shrouded_encryption"
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+tradition_synthetics = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_synthetics_adopt"
+	finish_bonus = "tr_synthetics_finish"
+	traditions = {
+		"tr_synthetics_maintenance_protocols"
+		"tr_synthetics_optimization_algorithms"
+		"tr_synthetics_synthetic_age"
+		"tr_synthetics_prefabricated_components"
+		"tr_synthetics_solid_state_actuators"
+	}
+
+	potential = {
+		always = no
+	}
+}
