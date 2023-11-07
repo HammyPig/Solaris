@@ -2,8 +2,8 @@
 @stage_2_research_bonus	= 200
 @stage_3_research_bonus	= 300
 @stage_4_research_bonus	= 350
-@entity_x				= 0
-@entity_y				= -20
+@entity_x				= -20
+@entity_y				= 0
 
 
 think_tank_0 = {
