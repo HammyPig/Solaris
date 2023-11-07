@@ -18,7 +18,7 @@ dyson_sphere_0 = {
 		}
 	}
 
-	prerequisites = { "tech_dyson_sphere" }
+	prerequisites = {}
 
 	possible = {
 		exists = starbase
@@ -170,7 +170,7 @@ dyson_sphere_1 = {
 		dyson_sphere_0
 	}
 
-	prerequisites = { "tech_dyson_sphere" }
+	prerequisites = {}
 
 	on_build_complete = {
 		remove_system_terraforming_candidates = yes
@@ -199,7 +199,7 @@ dyson_sphere_2 = {
 		dyson_sphere_1
 	}
 
-	prerequisites = { "tech_dyson_sphere" }
+	prerequisites = {}
 
 	on_build_complete = {
 		remove_system_terraforming_candidates = yes
@@ -228,7 +228,7 @@ dyson_sphere_3 = {
 		dyson_sphere_2
 	}
 
-	prerequisites = { "tech_dyson_sphere" }
+	prerequisites = {}
 
 	on_build_complete = {
 		remove_system_terraforming_candidates = yes
@@ -257,7 +257,7 @@ dyson_sphere_4 = {
 		dyson_sphere_3
 	}
 
-	prerequisites = { "tech_dyson_sphere" }
+	prerequisites = {}
 
 	on_build_complete = {
 		remove_system_terraforming_candidates = yes
@@ -286,7 +286,7 @@ dyson_sphere_5 = {
 		dyson_sphere_4
 	}
 
-	prerequisites = { "tech_dyson_sphere" }
+	prerequisites = {}
 	show_prereqs = yes
 
 	on_build_complete = {

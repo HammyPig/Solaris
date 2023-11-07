@@ -19,7 +19,7 @@ ring_world_1 = {
 		}
 	}
 
-	prerequisites = { "tech_ring_world" }
+	prerequisites = {}
 
 	possible = {
 		exists = starbase
@@ -140,7 +140,7 @@ ring_world_2_intermediate = {
 		ring_world_1
 	}
 
-	prerequisites = { "tech_ring_world" }
+	prerequisites = {}
 
 	on_build_start = {}
 	on_build_cancel = {}
@@ -224,7 +224,7 @@ ring_world_3_intermediate = {
 		ring_world_2
 	}
 
-	prerequisites = { "tech_ring_world" }
+	prerequisites = {}
 	show_prereqs = yes
 	prereq_name = "RING_WORLD_SHOW_NAME"
 

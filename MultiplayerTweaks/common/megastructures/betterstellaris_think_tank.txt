@@ -25,7 +25,7 @@ think_tank_0 = {
 		}
 	}
 
-	prerequisites = { "tech_science_nexus" }
+	prerequisites = {}
 
 	possible = {
 		exists = starbase
@@ -174,7 +174,7 @@ think_tank_1 = {
 		think_tank_0
 	}
 
-	prerequisites = { "tech_science_nexus" }
+	prerequisites = {}
 
 	country_modifier = {
 		all_technology_research_speed = 0.05
@@ -210,7 +210,7 @@ think_tank_2 = {
 		think_tank_1
 	}
 
-	prerequisites = { "tech_science_nexus" }
+	prerequisites = {}
 
 	country_modifier = {
 		all_technology_research_speed = 0.10
@@ -252,7 +252,7 @@ think_tank_3 = {
 		}
 	}
 
-	prerequisites = { "tech_science_nexus" }
+	prerequisites = {}
 	show_prereqs = yes
 
 	country_modifier = {
@@ -290,7 +290,7 @@ think_tank_4 = {
 		}
 	}
 
-	prerequisites = { "tech_science_nexus" }
+	prerequisites = {}
 
 	# used from script only
 	upgrade_desc = hide
