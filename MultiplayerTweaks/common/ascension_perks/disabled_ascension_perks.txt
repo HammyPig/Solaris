@@ -1,0 +1,203 @@
+ap_archaeoengineers = {
+	potential = {
+		always = no
+	}
+}
+
+ap_lord_of_war = {
+	potential = {
+		always = no
+	}
+}
+
+ap_become_the_crisis = {
+	potential = {
+		always = no
+	}
+}
+
+ap_hydrocentric = {
+	potential = {
+		always = no
+	}
+}
+
+ap_enigmatic_engineering = {
+	potential = {
+		always = no
+	}
+}
+
+ap_nihilistic_acquisition = {
+	potential = {
+		always = no
+	}
+}
+
+ap_colossus = {
+	potential = {
+		always = no
+	}
+}
+
+ap_world_shaper = {
+	potential = {
+		always = no
+	}
+}
+
+ap_galactic_force_projection = {
+	potential = {
+		always = no
+	}
+}
+
+ap_defender_of_the_galaxy = {
+	potential = {
+		always = no
+	}
+}
+
+ap_interstellar_dominion = {
+	potential = {
+		always = no
+	}
+}
+
+ap_grasp_the_void = {
+	potential = {
+		always = no
+	}
+}
+
+ap_eternal_vigilance = {
+	potential = {
+		always = no
+	}
+}
+
+ap_galactic_contender = {
+	potential = {
+		always = no
+	}
+}
+
+ap_technological_ascendancy = {
+	potential = {
+		always = no
+	}
+}
+
+ap_one_vision = {
+	potential = {
+		always = no
+	}
+}
+
+ap_consecrated_worlds = {
+	potential = {
+		always = no
+	}
+}
+
+ap_mastery_of_nature = {
+	potential = {
+		always = no
+	}
+}
+
+ap_imperial_prerogative = {
+	potential = {
+		always = no
+	}
+}
+
+ap_executive_vigor = {
+	potential = {
+		always = no
+	}
+}
+
+ap_transcendent_learning = {
+	potential = {
+		always = no
+	}
+}
+
+ap_shared_destiny = {
+	potential = {
+		always = no
+	}
+}
+
+ap_voidborn = {
+	potential = {
+		always = no
+	}
+}
+
+ap_master_builders = {
+	potential = {
+		always = no
+	}
+}
+
+ap_galactic_wonders_utopia = {
+	potential = {
+		always = no
+	}
+}
+
+ap_galactic_wonders_megacorp = {
+	potential = {
+		always = no
+	}
+}
+
+ap_galactic_wonders_utopia_and_megacorp = {
+	potential = {
+		always = no
+	}
+}
+
+ap_machine_worlds = {
+	potential = {
+		always = no
+	}
+}
+
+ap_hive_worlds = {
+	potential = {
+		always = no
+	}
+}
+
+ap_arcology_project = {
+	potential = {
+		always = no
+	}
+}
+
+ap_xeno_compatibility = {
+	potential = {
+		always = no
+	}
+}
+
+ap_universal_transactions = {
+	potential = {
+		always = no
+	}
+}
+
+ap_detox = {
+	potential = {
+		always = no
+	}
+}
+
+ap_mechromancy = {
+	potential = {
+		always = no
+	}
+}

@@ -1,0 +1,71 @@
+betterstellaris_ap_colossus = {
+	potential = {
+		NOT = {
+			has_ascension_perk = betterstellaris_ap_colossus
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+betterstellaris_ap_dyson_sphere = {
+	potential = {
+		NOT = {
+			has_ascension_perk = betterstellaris_ap_dyson_sphere
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+betterstellaris_ap_ring_world = {
+	potential = {
+		NOT = {
+			has_ascension_perk = betterstellaris_ap_ring_world
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+betterstellaris_ap_science_nexus = {
+	potential = {
+		NOT = {
+			has_ascension_perk = betterstellaris_ap_science_nexus
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+betterstellaris_ap_terraform = {
+	potential = {
+		NOT = {
+			has_ascension_perk = betterstellaris_ap_terraform
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+betterstellaris_ap_wormhole = {
+	potential = {
+		NOT = {
+			has_ascension_perk = betterstellaris_ap_wormhole
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
