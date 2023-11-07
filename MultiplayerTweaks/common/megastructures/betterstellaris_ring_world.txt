@@ -78,6 +78,10 @@ ring_world_1 = {
 			#NOT = { has_any_megastructure = yes }
 			has_no_non_gate_megastructure = yes
 		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_ring_world"
+			from = { NOT = { has_country_flag = built_ring_world } }
+		}
 	}
 
 	placement_rules = {
@@ -120,6 +124,7 @@ ring_world_1 = {
 	on_build_cancel = {}
 	on_build_complete = {
 		set_star_flag = ring_world_built
+		from = { set_country_flag = built_ring_world }
 	}
 }
 
