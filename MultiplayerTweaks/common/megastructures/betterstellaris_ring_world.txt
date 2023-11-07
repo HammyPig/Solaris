@@ -22,7 +22,7 @@ ring_world_1 = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starbase"
-		exists = starbase
+			exists = starbase
 		}
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
@@ -70,7 +70,6 @@ ring_world_1 = {
 				is_star_class = sc_trinary_4
 			}
 		}
-
 		custom_tooltip = {
 			fail_text = "requires_no_existing_megastructure"
 			#NOT = { has_any_megastructure = yes }

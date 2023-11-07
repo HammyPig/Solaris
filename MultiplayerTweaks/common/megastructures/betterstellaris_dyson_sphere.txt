@@ -23,7 +23,7 @@ dyson_sphere_0 = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starbase"
-		exists = starbase
+			exists = starbase
 		}
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
