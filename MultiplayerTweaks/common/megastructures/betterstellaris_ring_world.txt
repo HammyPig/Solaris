@@ -6,12 +6,12 @@ ring_world_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -7 y = -7 }
-	build_time = 1800
+	build_time = 450
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			influence = 300
+			alloys = 1250
+			influence = 75
 		}
 
 		upkeep = {
@@ -128,11 +128,11 @@ ring_world_2_intermediate = {
 	show_galactic_map_icon = no
 	show_in_outliner = no
 
-	build_time = 4800
+	build_time = 1200
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 2500
 		}
 	}
 
@@ -210,13 +210,13 @@ ring_world_3_intermediate = {
 	entity = ""
 	construction_entity = "ringworld_phase_3_construction_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 900
 	show_galactic_map_icon = no
 	show_in_outliner = no
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 2500
 		}
 	}
 
@@ -347,11 +347,11 @@ ring_world_restored = {
 	portrait = "GFX_megastructure_construction_background"
 	show_galactic_map_icon = no
 	show_in_outliner = no
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
+			alloys = 2500
 		}
 	}
 

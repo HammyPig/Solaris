@@ -12,12 +12,12 @@ think_tank_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 1800
+	build_time = 450
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			unity = 5000
+			alloys = 1250
+			unity = 1250
 		}
 
 		upkeep = {
@@ -151,12 +151,12 @@ think_tank_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
-			unity = 5000
+			alloys = 3750
+			unity = 1250
 		}
 
 		upkeep = {
@@ -187,12 +187,12 @@ think_tank_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
-			unity = 5000
+			alloys = 3750
+			unity = 1250
 		}
 
 		upkeep = {
@@ -223,12 +223,12 @@ think_tank_3 = {
 	portrait = "GFX_megastructure_think_tank_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
-			unity = 5000
+			alloys = 3750
+			unity = 1250
 		}
 
 		upkeep = {
@@ -336,12 +336,12 @@ think_tank_restored = {
 	portrait = "GFX_megastructure_think_tank_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 4800
+	build_time = 1200
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
-			unity = 3200
+			alloys = 3750
+			unity = 800
 		}
 
 		upkeep = {

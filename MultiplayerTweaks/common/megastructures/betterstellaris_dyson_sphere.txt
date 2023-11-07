@@ -5,12 +5,12 @@ dyson_sphere_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -7 y = -7 }
-	build_time = 1800
+	build_time = 450
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			unity = 1000
+			alloys = 1250
+			unity = 250
 		}
 
 		upkeep = {
@@ -157,12 +157,12 @@ dyson_sphere_1 = {
 	entity = "dyson_sphere_phase_01_entity"
 	construction_entity = "dyson_sphere_frame_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
-			unity = 5000
+			alloys = 2500
+			unity = 1250
 		}
 	}
 
@@ -182,16 +182,16 @@ dyson_sphere_2 = {
 	entity = "dyson_sphere_phase_02_entity"
 	construction_entity = "dyson_sphere_part_1_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
-			unity = 5000
+			alloys = 2500
+			unity = 1250
 		}
 
 		produces = {
-			energy = 1000
+			energy = 250
 		}
 	}
 
@@ -211,16 +211,16 @@ dyson_sphere_3 = {
 	entity = "dyson_sphere_phase_03_entity"
 	construction_entity = "dyson_sphere_part_2_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
-			unity = 5000
+			alloys = 2500
+			unity = 1250
 		}
 
 		produces = {
-			energy = 2000
+			energy = 500
 		}
 	}
 
@@ -240,16 +240,16 @@ dyson_sphere_4 = {
 	entity = "dyson_sphere_phase_04_entity"
 	construction_entity = "dyson_sphere_part_3_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
-			unity = 5000
+			alloys = 2500
+			unity = 1250
 		}
 
 		produces = {
-			energy = 3000
+			energy = 750
 		}
 	}
 
@@ -269,16 +269,16 @@ dyson_sphere_5 = {
 	entity = "dyson_sphere_phase_05_entity"
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
-	build_time = 3600
+	build_time = 900
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10000
-			unity = 5000
+			alloys = 2500
+			unity = 1250
 		}
 
 		produces = {
-			energy = 4000
+			energy = 1000
 		}
 	}
 
@@ -344,12 +344,12 @@ dyson_sphere_restored = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
-			unity = 7500
+			alloys = 5000
+			unity = 1875
 		}
 
 		produces = {
-			energy = 4000
+			energy = 1000
 		}
 	}
 	upgrade_from = {
