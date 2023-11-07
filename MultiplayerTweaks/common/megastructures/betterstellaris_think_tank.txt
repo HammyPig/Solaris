@@ -64,38 +64,27 @@ think_tank_0 = {
 			fail_text = "requires_no_existing_think_tank_two"
 			from = { NOT = { has_country_flag = built_think_tank_contingency } }
 		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole_neutron_star_pulsar"
+			OR = {
+				is_star_class = sc_black_hole
+				is_star_class = sc_neutron_star
+				is_star_class = sc_pulsar
+			}
+		}
 	}
 
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
-				fail_text = "requires_survey_not_habitable"
-				is_surveyed = {			# prevent leaking habitability information
-					who = prev.from
-					status = yes
-				}
-				colonizable_planet = no
+				fail_text = "must_build_around_star"
+				is_star = yes
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-			custom_tooltip = {
-				fail_text = "requires_not_minor_planetary_body"
-				NOR = {
-					is_asteroid = yes
-					is_moon = yes
-				}
-			}
-			custom_tooltip = {
-				fail_text = "requires_not_star"
-				is_star = no
-			}
-			custom_tooltip = {
-				fail_text = "requires_not_ring_world"
-				is_ringworld = no
-			}
-		} # use these for all non-star megastructures
+		}
 	}
 
 	# root = system
@@ -132,9 +121,6 @@ think_tank_0 = {
 	on_build_cancel = {}
 	on_build_complete = {
 		set_star_flag = think_tank_built
-		fromfrom.planet = {
-			set_planet_flag = has_megastructure
-		}
 		from = {
 			if = {
 				limit = {
