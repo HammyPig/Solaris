@@ -19,7 +19,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -50,7 +50,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -84,7 +84,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -114,7 +114,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -145,7 +145,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -175,7 +175,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -213,7 +213,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -244,7 +244,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -274,7 +274,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -304,7 +304,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -334,7 +334,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -364,7 +364,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -398,7 +398,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -429,7 +429,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -459,7 +459,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -489,7 +489,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -519,7 +519,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
@@ -549,7 +549,7 @@ terraform_link = {
 	duration = 1800
 
 	condition = {
-		has_technology = "tech_terrestrial_sculpting"
+		has_ascension_perk = betterstellaris_ap_terraform
 	}
 
 	ai_weight = {
