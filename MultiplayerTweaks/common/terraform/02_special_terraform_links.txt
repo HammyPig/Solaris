@@ -1,16 +1,5 @@
-@gaiaCost = 7500
-@gaiaTime = 3600
-
-@highestCost = 12500
-@highestTime = 9000
-
-@machineCost = 10000
-@machineTime = 7200
-
-@hiveCost = 10000
-@hiveTime = 7200
-
-@lClusterCost = 1000
+@advancedTerraformCost = 10000
+@advancedTerraformTime = 2000
 
 ################
 ## Tomb World ##
@@ -24,11 +13,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -54,11 +43,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -84,11 +73,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -114,11 +103,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -144,11 +133,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -174,11 +163,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -204,11 +193,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -234,11 +223,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -264,11 +253,11 @@ terraform_link = {
 		category = terraforming_ocean
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -304,11 +293,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 5000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 3600
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -336,11 +325,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 5000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 3600
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -368,11 +357,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 5000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 3600
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -400,11 +389,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 5400
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -432,11 +421,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 5400
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -464,11 +453,11 @@ terraform_link = {
 		category = terraforming_ocean
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 5400
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -501,11 +490,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 15000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -533,11 +522,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 15000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -565,11 +554,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 15000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -597,11 +586,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 5000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 3600
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -629,11 +618,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 5000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 3600
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -661,11 +650,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 5000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 3600
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -693,11 +682,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 5400
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -725,11 +714,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 5400
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -757,11 +746,11 @@ terraform_link = {
 		category = terraforming_ocean
 
 		cost = {
-			energy = 10000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 5400
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -793,11 +782,11 @@ terraform_link = {
 		category = terraforming_ocean
 
 		cost = {
-			energy = @highestCost
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = @highestTime
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -831,11 +820,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 15000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -863,11 +852,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 15000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner
@@ -895,11 +884,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = 15000
+			energy = @advancedTerraformCost
 		}
 	}
 
-	duration = 7200
+	duration = @advancedTerraformTime
 
 	potential = {
 		exists = owner

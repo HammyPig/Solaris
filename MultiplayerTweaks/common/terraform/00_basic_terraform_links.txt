@@ -1,4 +1,5 @@
-@basicTypeCost = 2000
+@basicTerraformCost = 5000
+@basicTerraformTime = 1000
 
 #########
 ## Wet ##
@@ -12,11 +13,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -43,11 +44,11 @@ terraform_link = {
 		category = terraforming_ocean
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -77,11 +78,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -107,11 +108,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -137,12 +138,12 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -168,11 +169,11 @@ terraform_link = {
 		category = terraforming_ocean
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -206,11 +207,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -237,11 +238,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -267,11 +268,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -297,11 +298,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -327,11 +328,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -357,11 +358,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -391,11 +392,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -422,11 +423,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -452,11 +453,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -482,11 +483,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -512,11 +513,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
@@ -542,11 +543,11 @@ terraform_link = {
 		category = terraforming
 
 		cost = {
-			energy = @basicTypeCost
+			energy = @basicTerraformCost
 		}
 	}
 
-	duration = 1800
+	duration = @basicTerraformTime
 
 	condition = {
 		has_ascension_perk = betterstellaris_ap_terraform
