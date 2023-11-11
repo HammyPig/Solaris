@@ -5,6 +5,14 @@ betterstellaris_ap_colossus = {
 		}
 	}
 
+	on_enabled = {
+		custom_tooltip = enable_colossus_project
+		custom_tooltip = describe_colossus_project
+		hidden_effect = {
+			country_event = { id = apoc.100 }
+		}
+	}
+
 	ai_weight = {
 		factor = 10
 	}
