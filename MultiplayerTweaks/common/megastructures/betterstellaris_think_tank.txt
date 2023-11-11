@@ -68,6 +68,10 @@ think_tank_0 = {
 				is_star_class = sc_pulsar
 			}
 		}
+		custom_tooltip = {
+			fail_text = "betterstellaris_requires_science_nexus_ascension_perk"
+			from = { has_ascension_perk = betterstellaris_ap_science_nexus }
+		}
 	}
 
 	placement_rules = {

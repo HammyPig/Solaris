@@ -16,12 +16,10 @@ wormhole = {
 	connection_type = one_to_one
 	ftl_ship_effect = "wormhole_ftl_ship_effect_entity"
 	ftl_bypass_effect = "wormhole_ftl_bypass_effect_entity"
-	prerequisites = {
-		tech_wormhole_stabilization
-	}
+	prerequisites = {}
 
 	potential = {
-		always = yes
+		has_ascension_perk = betterstellaris_ap_wormhole
 	}
 
 	country_can_use = {

@@ -72,8 +72,12 @@ ring_world_1 = {
 			has_no_non_gate_megastructure = yes
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_ring_world"
+			fail_text = "betterstellaris_requires_no_existing_ring_world"
 			from = { NOT = { has_country_flag = built_ring_world } }
+		}
+		custom_tooltip = {
+			fail_text = "betterstellaris_requires_ring_world_ascension_perk"
+			from = { has_ascension_perk = betterstellaris_ap_ring_world }
 		}
 	}
 
