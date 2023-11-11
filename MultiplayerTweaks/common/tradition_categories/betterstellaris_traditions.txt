@@ -59,7 +59,7 @@ betterstellaris_tradition_expansion = {
 betterstellaris_tradition_prosperity = {
 	tree_template = "tree_11_12"
 	adoption_bonus = "betterstellaris_tr_prosperity_adopt"
-	finish_bonus = "betterstellaris_tr_prosperity_a_new_life"
+	finish_bonus = "betterstellaris_tr_prosperity_finish"
 	traditions = {
 		"betterstellaris_tr_prosperity_a_new_life"
 		"betterstellaris_tr_prosperity_kinship"
