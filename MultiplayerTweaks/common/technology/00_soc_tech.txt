@@ -962,76 +962,7 @@ tech_terrestrial_sculpting = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight3
-
-	feature_flags = {
-		build_terraform_station
-	}
-
-	weight_modifier = {
-		factor = 1.5	# terraforming needs to be a bit more common
-		modifier = {
-			factor = 0
-			is_lithoid_empire = yes
-			has_valid_civic = civic_hive_devouring_swarm
-		}
-
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = { #if you're a fish, you're definitely gonna prioritise finding out how to make more oceans
-			factor = 1.25
-			has_trait = trait_aquatic
-		}
-		modifier = {
-			factor = 1.25
-			has_origin = origin_life_seeded
-		}
-
-	}
-
-	ai_weight = {
-		factor = @terraforming_tech_ai_factor
-
-		modifier = {
-			factor = 2
-			is_xenophobe = yes
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_origin = origin_shattered_ring
-				has_origin = origin_void_dwellers
-			}
-			is_ai = yes
-		}
-		modifier = {
-			factor = 5
-			any_system_within_border = {
-				any_system_planet = {
-					is_colonizable = yes
-					habitability = {
-						who = root
-						value < 0.5
-					}
-				}
-			}
-		}
-		modifier = { #Hydrocentric is really good and needs this
-			factor = 1000
-			has_trait = trait_aquatic
-		}
-		modifier = {
-			factor = 100
-			has_origin = origin_life_seeded
-		}
-		modifier = {
-			factor = 2
-			is_ai = no #auto-research
-		}
-	}
+	start_tech = yes
 }
 
 #Ecological Adaptation
@@ -1040,53 +971,7 @@ tech_ecological_adaptation = {
 	area = society
 	tier = 3
 	category = { new_worlds }
-	prerequisites = { "tech_terrestrial_sculpting" }
-	weight = @tier3weight2
-
-	feature_flags = {
-		terraform_inhabited
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-
-	}
-
-	ai_weight = {
-		factor = @terraforming_tech_ai_factor
-
-		modifier = {
-			factor = 2
-			is_xenophobe = yes
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				any_owned_planet = {
-					habitability = {
-						who = root
-						value < 0.5
-					}
-				}
-				any_system_within_border = {
-					any_system_planet = {
-						is_planet_class = pc_nuked
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			has_origin = origin_life_seeded
-		}
-		modifier = {
-			factor = 2
-			is_ai = no #auto-research
-		}
-	}
+	start_tech = yes
 }
 
 #Climate Transformation
@@ -1095,42 +980,7 @@ tech_climate_restoration = {
 	area = society
 	tier = 4
 	category = { new_worlds }
-	prerequisites = { "tech_terrestrial_sculpting" }
-	weight = @tier4weight1
-
-	# unlocks additional terraforming-options
-
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_TERRAFORMING_NUKED_CHANGE_TITLE"
-			desc = "TECH_UNLOCK_TERRAFORMING_NUKED_CHANGE_DESC"
-		}
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-
-	}
-
-	ai_weight = {
-		factor = @terraforming_tech_ai_factor
-
-		modifier = {
-			factor = 5
-			has_origin = origin_life_seeded
-		}
-		modifier = {
-			factor = 5
-			any_system_within_border = {
-				any_system_planet = {
-					is_planet_class = pc_nuked
-				}
-			}
-		}
-	}
+	start_tech = yes
 }
 
 # ##################
