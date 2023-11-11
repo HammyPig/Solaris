@@ -61,7 +61,7 @@ think_tank_0 = {
 			from = { NOT = { has_country_flag = built_think_tank_contingency } }
 		}
 		custom_tooltip = {
-			fail_text = "requires_black_hole_neutron_star_pulsar"
+			fail_text = "betterstellaris_requires_black_hole_neutron_star_pulsar"
 			OR = {
 				is_star_class = sc_black_hole
 				is_star_class = sc_neutron_star
