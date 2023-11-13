@@ -963,6 +963,10 @@ tech_terrestrial_sculpting = {
 	tier = 2
 	category = { new_worlds }
 	start_tech = yes
+
+	feature_flags = {
+		build_terraform_station
+	}
 }
 
 #Ecological Adaptation
@@ -972,6 +976,10 @@ tech_ecological_adaptation = {
 	tier = 3
 	category = { new_worlds }
 	start_tech = yes
+
+	feature_flags = {
+		terraform_inhabited
+	}
 }
 
 #Climate Transformation
