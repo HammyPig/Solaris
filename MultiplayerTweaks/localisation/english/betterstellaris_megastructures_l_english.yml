@@ -1,0 +1,12 @@
+﻿l_english:
+ betterstellaris_requires_dyson_sphere_ascension_perk:0 "$TRIGGER_FAIL$Requires §YStellar Engine Project§! Ascension Perk."
+
+ betterstellaris_requires_ring_world_ascension_perk:0 "$TRIGGER_FAIL$Requires §YElysium Project§! Ascension Perk."
+ betterstellaris_requires_no_existing_ring_world:0 "$TRIGGER_FAIL$Cannot build more than one Ring World."
+
+ betterstellaris_requires_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$Must be built in Black Hole, Neutron Star, or Pulsar system."
+ betterstellaris_requires_science_nexus_ascension_perk:0 "$TRIGGER_FAIL$Requires §YUnified Theory Project§! Ascension Perk."
+
+ betterstellaris_requires_terraform_ascension_perk:0 "$TRIGGER_FAIL$Requires §YWorld Shaper Project! Ascension Perk."
+ 
+ betterstellaris_requires_wormhole_ascension_perk:0 "$TRIGGER_FAIL$Requires §YDimensional Rift Project! Ascension Perk."
