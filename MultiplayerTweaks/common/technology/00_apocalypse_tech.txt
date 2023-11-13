@@ -12,7 +12,7 @@ tech_colossus = {
 	is_rare = yes
 	is_reverse_engineerable = no
 	category = { voidcraft }
-	prerequisites = { "tech_titans" }
+	prerequisites = {}
 	weight = 0
 
 	potential = {
