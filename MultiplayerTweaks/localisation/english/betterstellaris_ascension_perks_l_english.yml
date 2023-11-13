@@ -1,0 +1,18 @@
+﻿l_english:
+ betterstellaris_ap_colossus:0 "Colossus Project"
+ betterstellaris_ap_colossus_desc:0 "§YUnlocks The Colossus Project Situation Log.§! Completing the situation log unlocks the §YColossus§! §HShip Type§! that can be armed with §RPlanet-Killer Weapons§!.\n\nWhere fevered dreams of terror and deterrence meet. A vision of the biggest ship, carrying a weapon capable of devastating entire worlds."
+
+ betterstellaris_ap_dyson_sphere:0 "Stellar Engine Project"
+ betterstellaris_ap_dyson_sphere_desc:0 "§YUnlocks The Dyson Sphere Megastructure.§! Must be built in a single-star system. Capable of producing £energy£1000. Megastructures can only be built once, and are built around stars using a Construction ship."
+
+ betterstellaris_ap_ring_world:0 "Elysium Project"
+ betterstellaris_ap_ring_world_desc:0 "§YUnlocks The Ring World Megastructure.§! Must be built in a single-star system. Capable of creating 4 planet-equivalent segments with 100% habitability for all species. Megastructures can only be built once, and are built around stars using a Construction ship."
+
+ betterstellaris_ap_science_nexus:0 "Unified Theory Project"
+ betterstellaris_ap_science_nexus_desc:0 "§YUnlocks The Science Nexus Megastructure.§! Must be built in a Black Hole, Neutron Star, or Pulsar system. Capable of producing £physics£300 £society£300 £engineering£300. Megastructures can only be built once, and are built around stars using a Construction ship."
+
+ betterstellaris_ap_terraform:0 "World Shaper Project"
+ betterstellaris_ap_terraform_desc:0 "§YUnlocks Terraforming.§! Capable of changing planet type to increase habitability for a certain species. To carefully shape and alter the ecosystem of an entire planet into something else is not so very different from an artist sculpting a statue out of clay."
+
+ betterstellaris_ap_wormhole:0 "Dimensional Rift Project"
+ betterstellaris_ap_wormhole_desc:0 "§YUnlocks Wormhole Travel.§! A science ship must first explore a wormhole before ships can use it. Wormholes allow instant travel between two random systems across the galaxy. Ships automatically use wormholes when moving if faster to do so.\n\nThe stars beckon and we follow. Nothing will stand between us and them."

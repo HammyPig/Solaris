@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_betterstellaris_ap_colossus"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_become_the_crisis.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_betterstellaris_ap_dyson_sphere"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_galactic_wonders.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_betterstellaris_ap_ring_world"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_imperial_prerogative.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_betterstellaris_ap_science_nexus"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_transcendent_learning.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_betterstellaris_ap_terraform"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_world_shaper.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_betterstellaris_ap_wormhole"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_one_vision.dds"
+		alwaystransparent = yes
+	}
+}
