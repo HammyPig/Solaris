@@ -1,0 +1,20 @@
+betterstellaris_cb_subjugation = {
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		NOT = { is_overlord_to = FROM }
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = FROM } }
+		}
+	}
+}
+
+betterstellaris_cb_liberate = {
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		NOT = { is_overlord_to = FROM }
+		FROM = { is_subject = yes }
+	}
+}

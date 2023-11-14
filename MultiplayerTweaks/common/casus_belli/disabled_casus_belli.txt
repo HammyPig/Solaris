@@ -1,0 +1,125 @@
+cb_claim = {
+	potential = {
+		always = no
+	}
+}
+
+cb_subjugation = {
+	potential = {
+		always = no
+	}
+}
+
+cb_humiliation = {
+	potential = {
+		always = no
+	}
+}
+
+cb_ideology = {
+	potential = {
+		always = no
+	}
+}
+
+cb_sublimation = {
+	potential = {
+		always = no
+	}
+}
+
+cb_purification = {
+	potential = {
+		always = no
+	}
+}
+
+cb_hunger = {
+	potential = {
+		always = no
+	}
+}
+
+cb_despoliation = {
+	potential = {
+		always = no
+	}
+}
+
+cb_pirate_raid = {
+	potential = {
+		always = no
+	}
+}
+
+cb_colossus = {
+	potential = {
+		always = no
+	}
+}
+
+cb_stop_colossus = {
+	potential = {
+		always = no
+	}
+}
+
+cb_containment = {
+	potential = {
+		always = no
+	}
+}
+
+cb_subject = {
+	potential = {
+		always = no
+	}
+}
+
+cb_counterattack = {
+	potential = {
+		always = no
+	}
+}
+
+cb_renegade_containment = {
+	potential = {
+		always = no
+	}
+}
+
+cb_end_threat_renegade_containment = {
+	potential = {
+		always = no
+	}
+}
+
+cb_revenge_for_eaten_star = {
+	potential = {
+		always = no
+	}
+}
+
+cb_end_threat_revenge_for_eaten_star = {
+	potential = {
+		always = no
+	}
+}
+
+cb_allegiance = {
+	potential = {
+		always = no
+	}
+}
+
+cb_payback = {
+	potential = {
+		always = no
+	}
+}
+
+cb_payback_punishment = {
+	potential = {
+		always = no
+	}
+}
