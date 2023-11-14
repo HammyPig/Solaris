@@ -1,0 +1,34 @@
+subject_integration = {
+	term_type = discrete
+	hidden = yes
+}
+
+subject_diplomacy = {
+	term_type = discrete
+	hidden = yes
+}
+
+subject_expand = {
+	term_type = discrete
+	hidden = yes
+}
+
+resource_subsidies = {
+	term_type = resource
+	hidden = yes
+}
+
+joins_overlord_wars = {
+	term_type = discrete
+	hidden = yes
+}
+
+joins_subject_wars = {
+	term_type = discrete
+	hidden = yes
+}
+
+subject_holdings_limit = {
+	term_type = discrete_number
+	hidden = yes
+}
