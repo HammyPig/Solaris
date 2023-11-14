@@ -1,0 +1,97 @@
+betterstellaris_wg_subjugation = {
+	casus_belli = betterstellaris_cb_subjugation
+	set_defender_wargoal = betterstellaris_wg_subjugation
+	
+	release_occupied_systems_on_status_quo = yes
+
+	allowed_peace_offers = {
+		status_quo
+		surrender
+		demand_surrender
+	}
+
+	surrender_acceptance = -100
+
+	potential = {
+		always = yes
+	}
+
+	on_accept = {
+		hidden_effect = {
+			from = {
+				add_threat = {
+					who = root
+					amount = 0.5
+				}
+			}
+		}
+		FROMFROM = {
+			every_war_participant = {
+				limit = {
+					FROMFROM = {
+						is_war_participant = {
+							who = prev
+							side = defenders
+						}
+					}
+					is_subject = yes
+				}
+				set_subject_of = {
+					who = none
+				}
+			}
+		}
+		ROOT = {
+			if = {
+				limit = { is_subject = yes }
+				FROM = {
+					set_subject_of = {
+						who = ROOT.overlord
+						preset = preset_vassal_benevolent
+					}
+				}
+			} else = {
+				FROM = {
+					set_subject_of = {
+						who = ROOT
+						preset = preset_vassal_benevolent
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+betterstellaris_wg_liberate = {
+	casus_belli = betterstellaris_cb_liberate
+	set_defender_wargoal = betterstellaris_wg_subjugation
+
+	release_occupied_systems_on_status_quo = yes
+
+	potential = {
+		NOT = { is_overlord_to = FROM }
+		FROM = { is_subject = yes }
+	}
+
+	allowed_peace_offers = {
+		status_quo
+		surrender
+		demand_surrender
+	}
+
+	on_accept = {
+		FROM = {
+			set_subject_of {
+				who = none
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}

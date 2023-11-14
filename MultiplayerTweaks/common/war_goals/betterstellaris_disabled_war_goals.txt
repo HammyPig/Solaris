@@ -1,0 +1,271 @@
+wg_independence = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_end_threat = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_end_threat_swarm = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_end_threat_assimilators = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_assimilation = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_cleansing = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_absorption = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_assimilation_vs_fe = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_cleansing_vs_fe = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_absorption_vs_fe = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_plunder = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_plunder_raid = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_colossus = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_end_threat_colossus = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_subjugation = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_tribute = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_megacorp_subjugate = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_force_ideology = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_conquest = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_humiliation = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_take_galatron = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_expel_corp = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_hostile_takeover = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_steal_galatron = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_scion = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_hegemon = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_leave_hegemony = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_counterattack = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_renegade_containment = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_end_threat_renegade_containment = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_revenge_for_eaten_star = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_end_threat_revenge_for_eaten_star = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_allegiance = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
+
+wg_payback_stop_atrocities = {
+	casus_belli = cb_subjugation
+
+	potential = {
+		always = no
+	}
+}
