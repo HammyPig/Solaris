@@ -25,22 +25,6 @@ betterstellaris_wg_subjugation = {
 				}
 			}
 		}
-		FROMFROM = {
-			every_war_participant = {
-				limit = {
-					FROMFROM = {
-						is_war_participant = {
-							who = prev
-							side = defenders
-						}
-					}
-					is_subject = yes
-				}
-				set_subject_of = {
-					who = none
-				}
-			}
-		}
 		ROOT = {
 			if = {
 				limit = { is_subject = yes }
@@ -52,6 +36,11 @@ betterstellaris_wg_subjugation = {
 				}
 			} else = {
 				FROM = {
+					every_subject = {
+						set_subject_of = {
+							who = none
+						}
+					}
 					set_subject_of = {
 						who = ROOT
 						preset = preset_vassal_benevolent
