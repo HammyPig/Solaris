@@ -24,7 +24,7 @@ preset_vassal_benevolent = {
 			}
 			{
 				key = joins_overlord_wars
-				value = joins_overlord_wars_defensive
+				value = joins_overlord_wars_none
 			}
 			{
 				key = joins_subject_wars
