@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_betterstellaris_wg_subjugation"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_isvassal.dds"
+	}
+	spriteType = {
+		name = "GFX_betterstellaris_wg_liberate"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_federation.dds"
+	}
+}
