@@ -2,7 +2,7 @@ betterstellaris_wg_subjugation = {
 	casus_belli = betterstellaris_cb_subjugation
 	set_defender_wargoal = betterstellaris_wg_subjugation
 	
-	release_occupied_systems_on_status_quo = yes
+	release_occupied_systems_on_status_quo = no
 
 	allowed_peace_offers = {
 		status_quo
@@ -59,7 +59,7 @@ betterstellaris_wg_liberate = {
 	casus_belli = betterstellaris_cb_liberate
 	set_defender_wargoal = betterstellaris_wg_subjugation
 
-	release_occupied_systems_on_status_quo = yes
+	release_occupied_systems_on_status_quo = no
 
 	potential = {
 		NOT = { is_overlord_to = FROM }
