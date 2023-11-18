@@ -1,5 +1,4 @@
-preset_vassal_benevolent = {
-	parent = preset_vassal
+betterstellaris_preset_subject = {
 	icon = "GFX_diplomacy_status_is_vassal"
 	hidden = yes
 	term_data = {

@@ -31,7 +31,7 @@ betterstellaris_wg_subjugation = {
 				FROM = {
 					set_subject_of = {
 						who = ROOT.overlord
-						preset = preset_vassal_benevolent
+						preset = betterstellaris_preset_subject
 					}
 				}
 			} else = {
@@ -43,7 +43,7 @@ betterstellaris_wg_subjugation = {
 					}
 					set_subject_of = {
 						who = ROOT
-						preset = preset_vassal_benevolent
+						preset = betterstellaris_preset_subject
 					}
 				}
 			}
