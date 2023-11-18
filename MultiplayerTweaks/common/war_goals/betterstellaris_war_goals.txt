@@ -2,6 +2,7 @@ betterstellaris_wg_subjugation = {
 	casus_belli = betterstellaris_cb_subjugation
 	set_defender_wargoal = betterstellaris_wg_subjugation
 	
+	cede_claims = occupied_only
 	release_occupied_systems_on_status_quo = no
 
 	allowed_peace_offers = {
@@ -59,6 +60,7 @@ betterstellaris_wg_liberate = {
 	casus_belli = betterstellaris_cb_liberate
 	set_defender_wargoal = betterstellaris_wg_subjugation
 
+	cede_claims = occupied_only
 	release_occupied_systems_on_status_quo = no
 
 	potential = {
