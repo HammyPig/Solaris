@@ -1,0 +1,6 @@
+on_planet_attackers_win = {
+	events = {
+		betterstellaris.0		# Empire Capital Captured
+		betterstellaris.2		# Empire Capital Liberated
+	}
+}

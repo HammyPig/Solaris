@@ -1,0 +1,167 @@
+namespace = betterstellaris
+
+# ROOT = country, lead attacker
+# FROM = country, planet owner
+# FROMFROM = planet
+
+country_event = {
+	id = betterstellaris.0
+	title = betterstellaris.0.name
+	desc = betterstellaris.0.desc
+	picture = GFX_evt_enclave_overlord
+	show_sound = event_coronation
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			is_country_type = default
+		}
+		FROMFROM = { is_capital = yes }
+		OR = {
+			any_war = {
+				any_attacker = { is_same_value = ROOT }
+				any_defender = { is_same_value = FROM }
+				using_war_goal = {
+					type = betterstellaris_wg_subjugation
+					owner = attacker
+				}
+			}
+			any_war = {
+				any_attacker = { is_same_value = FROM }
+				any_defender = { is_same_value = ROOT }
+				using_war_goal = {
+					type = betterstellaris_wg_subjugation
+					owner = defender
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_war = {
+			limit = {
+				any_attacker = { is_same_value = ROOT }
+				any_defender = { is_same_value = FROM }
+				using_war_goal = {
+					type = betterstellaris_wg_subjugation
+					owner = attacker
+				}
+			}
+			end_war_effect = yes
+		}
+		hidden_effect = {
+			from = {
+				add_threat = {
+					who = root
+					amount = 0.5
+				}
+			}
+		}
+		ROOT = {
+			if = {
+				limit = { is_subject = yes }
+				FROM = {
+					set_subject_of = {
+						who = ROOT.overlord
+						preset = betterstellaris_preset_subject
+					}
+				}
+			} else = {
+				FROM = {
+					every_subject = {
+						set_subject_of = {
+							who = none
+						}
+					}
+					set_subject_of = {
+						who = ROOT
+						preset = betterstellaris_preset_subject
+					}
+				}
+			}
+		}
+		FROM = { country_event = { id = betterstellaris.1 } }
+	}
+
+	option = {
+		name = betterstellaris.0.a
+	}
+}
+
+country_event = {
+	id = betterstellaris.1
+	title = betterstellaris.1.name
+	desc = betterstellaris.1.desc
+	picture = GFX_evt_galactic_empire
+	show_sound = event_announcement
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.1.a
+	}
+}
+
+country_event = {
+	id = betterstellaris.2
+	title = betterstellaris.2.name
+	desc = betterstellaris.2.desc
+	picture = GFX_evt_victorious_army
+	show_sound = event_space_battle
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			is_country_type = default
+		}
+		FROMFROM = { is_capital = yes }
+		any_war = {
+			any_attacker = { is_same_value = ROOT }
+			any_defender = { is_same_value = FROM }
+			using_war_goal = {
+				type = betterstellaris_wg_liberate
+				owner = attacker
+			}
+		}
+	}
+
+	immediate = {
+		every_war = {
+			limit = {
+				any_attacker = { is_same_value = ROOT }
+				any_defender = { is_same_value = FROM }
+				using_war_goal = {
+					type = betterstellaris_wg_liberate
+					owner = attacker
+				}
+			}
+			end_war_effect = yes
+		}
+		FROM = {
+			set_subject_of {
+				who = none
+			}
+		}
+		FROM = { country_event = { id = betterstellaris.3 } }
+	}
+
+	option = {
+		name = betterstellaris.2.a
+	}
+}
+
+country_event = {
+	id = betterstellaris.3
+	title = betterstellaris.3.name
+	desc = betterstellaris.3.desc
+	picture = GFX_evt_synth_organic_relations
+	show_sound = event_celebration
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.3.a
+	}
+}
