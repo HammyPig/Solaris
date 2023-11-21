@@ -1,3 +1,0 @@
-	NGameplay = {
-		TRUCE_YEARS							= 0	# Truce last for X years
-	}

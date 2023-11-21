@@ -1,3 +1,0 @@
-	NGameplay = {
-		ENFORCE_STATUS_QUO_ENABLED				= no		# Can status quo be enforced at high WE?
-	}
