@@ -92,10 +92,6 @@ tech_cruisers = {
 		}
 	}
 
-	modifier = {
-		command_limit_add = 10
-	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 0.1
@@ -145,10 +141,6 @@ tech_battleships = {
 			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_DESC"
 		}
-	}
-
-	modifier = {
-		command_limit_add = 10
 	}
 
 	weight_modifier = {

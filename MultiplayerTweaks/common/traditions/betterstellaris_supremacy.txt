@@ -38,7 +38,8 @@ betterstellaris_tr_supremacy_war_games = {
 	}
     
 	modifier = {
-		command_limit_add = 20
+		country_commander_cap_add = 1
+		commander_initial_skill = 1
 	}
 
 	ai_weight = {
