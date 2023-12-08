@@ -1,0 +1,208 @@
+action_improve_relation = {
+    icon = "GFX_diplomacy_improve_relation"
+    auto_accepted = yes
+    require_envoy = yes
+    envoy_assignment = improve_relations
+    requires_actor_independence = no
+    requires_recipient_independence = no
+    action_type = positive
+
+    potential = {
+        always = no
+    }
+}
+
+action_harm_relation = {
+    icon = "GFX_diplomacy_harm_relation"
+    auto_accepted = yes
+    require_envoy = yes
+    envoy_assignment = harm_relations
+    requires_actor_independence = no
+    requires_recipient_independence = no
+    action_type = negative
+
+    potential = {
+        always = no
+    }
+}
+
+action_make_claims_diplomacy_view = {
+    is_listed = yes
+
+    potential = {
+        always = no
+    }
+}
+
+action_make_rival = {
+    icon = "GFX_diplomacy_status_rivalry"
+    auto_accepted = yes
+    requires_actor_independence = no
+    requires_recipient_independence = no
+    should_show_auto_accept_message_recipient = yes
+    should_notify_all_communications = yes
+    action_type = aggressive
+
+    potential = {
+        always = no
+    }
+}
+
+action_support_independence = {
+    icon = "GFX_diplomacy_status_support_independence"
+    auto_accepted = yes
+    should_notify_all_communications = yes
+    requires_recipient_independence = no
+    action_type = positive
+
+    potential = {
+        always = no
+    }
+}
+
+action_invite_to_federation = {
+    icon = "GFX_diplomacy_status_federation"
+    requires_actor_peace = yes
+    requires_recipient_peace = yes
+    requires_alliance_vote = yes
+    diplo_view_acceptance_icon = yes
+    should_notify_all_communications = yes
+    AI_acceptance_base_value = -50
+    action_type = positive
+    should_show_auto_accept_message_recipient = yes
+    should_open_auto_accept_message_recipient = yes
+    should_notify_auto_recipient_on_vote_fail = yes
+
+    potential = {
+        always = no
+    }
+}
+
+action_demand_subjugation = {
+    icon = "GFX_diplomacy_status_has_vassal"
+    requires_actor_peace = yes
+    requires_recipient_peace = yes
+    diplo_view_acceptance_icon = no
+    should_notify_all_communications = yes
+    requires_recipient_independence = no
+    AI_acceptance_base_value = -50
+    action_type = aggressive
+
+    potential = {
+        always = no
+    }
+}
+
+action_ask_to_become_subjugated = {
+    icon = "GFX_diplomacy_status_has_vassal"
+    requires_actor_peace = yes
+    requires_recipient_peace = yes
+    diplo_view_acceptance_icon = no
+    should_notify_all_communications = yes
+    AI_acceptance_base_value = -50
+    action_type = positive
+
+    potential = {
+        always = no
+    }
+}
+
+action_release_subject = {
+    icon = "GFX_diplomacy_status_has_vassal"
+    requires_recipient_independence = no
+    auto_accepted = yes
+    should_notify_all_communications = yes
+    should_show_auto_accept_message_recipient = yes
+    action_type = positive
+
+    potential = {
+        always = no
+    }
+}
+
+action_ask_to_be_released_subject = {
+    icon = "GFX_diplomacy_status_has_vassal"
+    requires_actor_independence = no
+    diplo_view_acceptance_icon = yes
+    should_notify_all_communications = yes
+    AI_acceptance_base_value = -50
+    action_type = neutral
+
+    potential = {
+        always = no
+    }
+}
+
+action_negotiate_existing_agreement = {
+    icon = "GFX_action_negotiate_existing_agreement"
+    requires_actor_independence = no
+    requires_recipient_independence = no
+    requires_actor_federation_leader = no
+    requires_recipient_federation_leader = no
+    diplo_view_acceptance_icon = no
+
+    potential = {
+        always = no
+    }
+}
+
+action_insult = {
+    icon = "GFX_diplomacy_status_war"
+    requires_recipient_independence = no
+    requires_actor_independence = no
+    auto_accepted = yes
+    should_show_auto_accept_message_recipient = yes
+    action_type = aggressive
+
+    potential = {
+        always = no
+    }
+}
+
+action_integrate_subject = {
+    icon = "GFX_diplomacy_status_being_integrated"
+    auto_accepted = yes
+    requires_recipient_independence = no
+    should_notify_all_communications = yes
+    action_type = neutral
+
+    potential = {
+        always = no
+    }
+}
+
+action_pledge_secret_fealty = {
+    icon = "GFX_diplomacy_status_secret_fealty"
+    auto_accepted = yes
+    diplo_view_acceptance_icon = no
+    requires_actor_independence = no
+    requires_recipient_independence = yes
+    requires_actor_federation_leader = no
+    requires_recipient_federation_leader = no
+    should_show_accept_message = no
+    should_show_auto_accept_message_recipient = yes
+    should_open_auto_accept_message_recipient = yes
+    should_show_auto_accept_message_actor = no
+    should_notify_all_communications = no
+    action_type = positive
+    
+    potential = {
+        always = no
+    }
+}
+
+action_propose_secret_fealty = {
+    icon = "GFX_diplomacy_status_secret_fealty"
+    auto_accepted = no
+    diplo_view_acceptance_icon = yes
+    requires_recipient_independence = no
+    requires_actor_independence = yes
+    requires_actor_federation_leader = no
+    requires_recipient_federation_leader = no
+    should_notify_all_communications = no
+    action_type = neutral
+    
+    potential = {
+        always = no
+    }
+}
