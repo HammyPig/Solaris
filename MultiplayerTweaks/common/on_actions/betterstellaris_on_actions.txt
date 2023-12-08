@@ -1,6 +1,17 @@
-on_planet_attackers_win = {
+on_war_beginning = {
 	events = {
-		betterstellaris.0		# Empire Capital Captured
-		betterstellaris.2		# Empire Capital Liberated
+		betterstellaris.100
+	}
+}
+
+on_starbase_disabled = {
+	events = {
+		betterstellaris.200
+	}
+}
+
+on_entering_system_fleet = {
+	events = {
+		betterstellaris.300
 	}
 }

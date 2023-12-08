@@ -9,12 +9,3 @@ betterstellaris_cb_subjugation = {
 		}
 	}
 }
-
-betterstellaris_cb_liberate = {
-	show_in_diplomacy = no
-	show_notification = no
-	potential = {
-		NOT = { is_overlord_to = FROM }
-		FROM = { is_subject = yes }
-	}
-}

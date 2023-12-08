@@ -1,167 +1,359 @@
 namespace = betterstellaris
 
-# ROOT = country, lead attacker
-# FROM = country, planet owner
-# FROMFROM = planet
-
+# on entering war
 country_event = {
-	id = betterstellaris.0
-	title = betterstellaris.0.name
-	desc = betterstellaris.0.desc
+	id = betterstellaris.100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		root = { is_same_value = from.defender }
+	}
+
+	immediate = {
+		# declaration of war
+		country_event = { id = betterstellaris.101 scopes = { from = from.attacker } }
+	}
+}
+
+# declaration of war
+country_event = {
+	id = betterstellaris.101
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# notify defender of declaration of war
+		country_event = { id = betterstellaris.102 }
+
+		# notify all other players of declaration of war
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOR = {
+					is_same_value = root
+					is_same_value = from
+				}
+			}
+
+			country_event = { id = betterstellaris.103 }
+		}
+	}
+}
+
+# you have been declared war on notification
+country_event = {
+	id = betterstellaris.102
+	title = betterstellaris.102.name
+	desc = betterstellaris.102.desc
+	picture = GFX_evt_fleet_evil
+	show_sound = event_worrying_signal
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.102.a
+	}
+}
+
+# foreign empires have declared war notification
+country_event = {
+	id = betterstellaris.103
+	title = betterstellaris.103.name
+	desc = betterstellaris.103.desc
+	picture = GFX_evt_worrying_signal
+	show_sound = event_yellow_alert
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.103.a
+	}
+}
+
+# on starbase disabled
+starbase_event = {
+	id = betterstellaris.200
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		# starbase is in capital system
+		root.orbit.solar_system = {
+			is_capital_system = yes
+		}
+
+		# fleet owner is at war with starbase owner
+		from.owner = {
+			OR = {
+				any_war = {
+					any_attacker = { is_same_value = from.owner }
+					any_defender = { is_same_value = root.owner }
+					using_war_goal = {
+						type = betterstellaris_wg_subjugation
+						owner = attacker
+					}
+				}
+				any_war = {
+					any_attacker = { is_same_value = root.owner }
+					any_defender = { is_same_value = from.owner }
+					using_war_goal = {
+						type = betterstellaris_wg_subjugation
+						owner = defender
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		# subjugation
+		root.owner = {
+			country_event = { id = betterstellaris.201 scopes = { from = from.owner } }
+		}
+	}
+}
+
+# subjugation
+country_event = {
+	id = betterstellaris.201
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# end war
+		from = {
+			every_war = {
+				limit = {
+					any_attacker = { is_same_value = from }
+					any_defender = { is_same_value = root }
+					using_war_goal = {
+						type = betterstellaris_wg_subjugation
+						owner = attacker
+					}
+				}
+
+				end_war_effect = yes
+			}
+			every_war = {
+				limit = {
+					any_attacker = { is_same_value = root }
+					any_defender = { is_same_value = from }
+					using_war_goal = {
+						type = betterstellaris_wg_subjugation
+						owner = defender
+					}
+				}
+
+				end_war_effect = yes
+			}
+		}
+
+		# subjugate loser
+		root = {
+			# loser releases all subjects
+			every_subject = {
+				set_subject_of = {
+					who = none
+				}
+			}
+
+			# loser becomes subject of winner
+			set_subject_of = {
+				who = from
+				preset = betterstellaris_preset_subject
+			}
+		}
+
+		# notify winner
+		from = {
+			country_event = { id = betterstellaris.202 scopes = { from = from } }
+		}
+
+		# notify loser
+		root = {
+			country_event = { id = betterstellaris.203 scopes = { from = from } }
+		}
+
+		# notify all other players
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOR = {
+					is_same_value = from
+					is_same_value = root
+				}
+			}
+
+			country_event = { id = betterstellaris.204 }
+		}
+	}
+}
+
+# you have subjucated an empire notification
+country_event = {
+	id = betterstellaris.202
+	title = betterstellaris.202.name
+	desc = betterstellaris.202.desc
 	picture = GFX_evt_enclave_overlord
 	show_sound = event_coronation
 
 	is_triggered_only = yes
 
-	trigger = {
-		FROM = {
-			is_country_type = default
-		}
-		FROMFROM = { is_capital = yes }
-		OR = {
-			any_war = {
-				any_attacker = { is_same_value = ROOT }
-				any_defender = { is_same_value = FROM }
-				using_war_goal = {
-					type = betterstellaris_wg_subjugation
-					owner = attacker
-				}
-			}
-			any_war = {
-				any_attacker = { is_same_value = FROM }
-				any_defender = { is_same_value = ROOT }
-				using_war_goal = {
-					type = betterstellaris_wg_subjugation
-					owner = defender
-				}
-			}
-		}
-	}
-
-	immediate = {
-		every_war = {
-			limit = {
-				any_attacker = { is_same_value = ROOT }
-				any_defender = { is_same_value = FROM }
-				using_war_goal = {
-					type = betterstellaris_wg_subjugation
-					owner = attacker
-				}
-			}
-			end_war_effect = yes
-		}
-		hidden_effect = {
-			from = {
-				add_threat = {
-					who = root
-					amount = 0.5
-				}
-			}
-		}
-		ROOT = {
-			if = {
-				limit = { is_subject = yes }
-				FROM = {
-					set_subject_of = {
-						who = ROOT.overlord
-						preset = betterstellaris_preset_subject
-					}
-				}
-			} else = {
-				FROM = {
-					every_subject = {
-						set_subject_of = {
-							who = none
-						}
-					}
-					set_subject_of = {
-						who = ROOT
-						preset = betterstellaris_preset_subject
-					}
-				}
-			}
-		}
-		FROM = { country_event = { id = betterstellaris.1 } }
-	}
-
 	option = {
-		name = betterstellaris.0.a
+		name = betterstellaris.202.a
 	}
 }
 
+# you have been subjugated notification
 country_event = {
-	id = betterstellaris.1
-	title = betterstellaris.1.name
-	desc = betterstellaris.1.desc
+	id = betterstellaris.203
+	title = betterstellaris.203.name
+	desc = betterstellaris.203.desc
 	picture = GFX_evt_galactic_empire
 	show_sound = event_announcement
 
 	is_triggered_only = yes
 
 	option = {
-		name = betterstellaris.1.a
+		name = betterstellaris.203.a
 	}
 }
 
+# foreign empire has been subjugated notification
 country_event = {
-	id = betterstellaris.2
-	title = betterstellaris.2.name
-	desc = betterstellaris.2.desc
-	picture = GFX_evt_victorious_army
-	show_sound = event_space_battle
+	id = betterstellaris.204
+	title = betterstellaris.204.name
+	desc = betterstellaris.204.desc
+	picture = GFX_evt_spymaster
+	show_sound = event_red_alert
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.204.a
+	}
+}
+
+# on entering system fleet
+fleet_event = {
+	id = betterstellaris.300
+	hide_window = yes
 
 	is_triggered_only = yes
 
 	trigger = {
-		FROM = {
-			is_country_type = default
+		# system is a capital system
+		from = {
+			is_capital_system = yes
 		}
-		FROMFROM = { is_capital = yes }
-		any_war = {
-			any_attacker = { is_same_value = ROOT }
-			any_defender = { is_same_value = FROM }
-			using_war_goal = {
-				type = betterstellaris_wg_liberate
-				owner = attacker
+
+		# fleet owner is at war with subject's overlord
+		root.owner = {
+			OR = {
+				any_war = {
+					any_attacker = { is_same_value = root.owner }
+					any_defender = { is_same_value = from.owner.overlord }
+					using_war_goal = {
+						type = betterstellaris_wg_subjugation
+						owner = attacker
+					}
+				}
+				any_war = {
+					any_attacker = { is_same_value = from.owner.overlord }
+					any_defender = { is_same_value = root.owner }
+					using_war_goal = {
+						type = betterstellaris_wg_subjugation
+						owner = defender
+					}
+				}
 			}
 		}
 	}
 
 	immediate = {
-		every_war = {
-			limit = {
-				any_attacker = { is_same_value = ROOT }
-				any_defender = { is_same_value = FROM }
-				using_war_goal = {
-					type = betterstellaris_wg_liberate
-					owner = attacker
-				}
-			}
-			end_war_effect = yes
+		# liberation
+		from.owner = {
+			country_event = { id = betterstellaris.301 scopes = { from = root.owner } }
 		}
-		FROM = {
-			set_subject_of {
-				who = none
-			}
-		}
-		FROM = { country_event = { id = betterstellaris.3 } }
-	}
-
-	option = {
-		name = betterstellaris.2.a
 	}
 }
 
+# liberation
 country_event = {
-	id = betterstellaris.3
-	title = betterstellaris.3.name
-	desc = betterstellaris.3.desc
+	id = betterstellaris.301
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# notify liberator empire
+		from = {
+			country_event = { id = betterstellaris.302 scopes = { from = root } }
+		}
+
+		# notify liberated empires former overlord
+		root.overlord = {
+			country_event = { id = betterstellaris.303 scopes = { from = from } }
+		}
+
+		root = {
+			# release subject from overlord
+			set_subject_of = {
+				who = none
+			}
+
+			# notify liberated empire
+			country_event = { id = betterstellaris.304 scopes = { from = from } }
+		}	
+	}
+}
+
+# you have liberated an empire notification
+country_event = {
+	id = betterstellaris.302
+	title = betterstellaris.302.name
+	desc = betterstellaris.302.desc
+	picture = GFX_evt_victorious_army
+	show_sound = event_space_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.302.a
+	}
+}
+
+# your subject has been liberated notification
+country_event = {
+	id = betterstellaris.303
+	title = betterstellaris.303.name
+	desc = betterstellaris.303.desc
+	picture = GFX_evt_spymaster
+	show_sound = event_comms_cutoff
+
+	is_triggered_only = yes
+
+	option = {
+		name = betterstellaris.303.a
+	}
+}
+
+# you have been liberated by a foreign empire notification
+country_event = {
+	id = betterstellaris.304
+	title = betterstellaris.304.name
+	desc = betterstellaris.304.desc
 	picture = GFX_evt_synth_organic_relations
 	show_sound = event_celebration
 
 	is_triggered_only = yes
 
 	option = {
-		name = betterstellaris.3.a
+		name = betterstellaris.304.a
 	}
 }

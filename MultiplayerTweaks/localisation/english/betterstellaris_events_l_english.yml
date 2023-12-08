@@ -1,0 +1,32 @@
+﻿l_english:
+ betterstellaris.102.name:0 "Declaration of War"
+ betterstellaris.102.desc:0 "A foreign empire has declared war. Early warning systems have detected the unmistakable signatures of rival armadas massing on the fringe of our territory. Systems across the expanse have been warned and our citizens look to us for leadership.\n\nThe enemy is at our gates. Our fleets are on high alert. The galaxy holds its breath in anticipation of the battles that will define our legacy."
+ betterstellaris.102.a:0 "Battlestations!"
+
+ betterstellaris.103.name:0 "Foreign Conflict Begins"
+ betterstellaris.103.desc:0 "The galactic airwaves are abuzz with reports that two foreign empires have entered war. Leaders and diplomats are closely monitoring the situation, weighing their options and preparing for potential shifts in the geopolitical landscape.\n\nThe fate of the two empires remains uncertain. The galaxy can only guess as to how the choices made by distant powers may have far-reaching consequences."
+ betterstellaris.103.a:0 "Worrying."
+
+ betterstellaris.202.name:0 "Empire Capital Captured"
+ betterstellaris.202.desc:0 "As your fleets descend upon the heart of the enemy's empire, the once-proud bastion of their dominion now lies within your grasp. A wave of subjugation sweeps across the captured territories as your empire imposes its will.\n\nAs the dust settles, a new chapter begins. The conquered empire assimilated into your dominion, their capital forever a testament to your indomitable force in the boundless expanse of the galaxy."
+ betterstellaris.202.a:0 "Long live the §Y[from.GetName]§!!"
+ 
+ betterstellaris.203.name:0 "Empire Capital Lost"
+ betterstellaris.203.desc:0 "The capital, the beating heart of our once-mighty empire, now lies in ruins. The skies over our homeworld are painted with the hues of destruction, signaling the bitter end of a desperate struggle.\n\nIn the shadow of our fallen citadels, leaders reluctantly surrender, recognizing the futility of further resistance. The galaxy witnesses the somber transfer of power, and our people mourn the loss of sovereignty."
+ betterstellaris.203.a:0 "Long live the §Y[from.GetName]§!..."
+
+ betterstellaris.204.name:0 "Foreign Empire Subjugated"
+ betterstellaris.204.desc:0 "Reports confirm a foreign empire has fallen. Governments scramble to assess the situation, and the diplomatic arena is ablaze with debates, condemnations, and calls for action.\n\nThe conquered empire's cry for help echoes through the void. Strategic considerations and cautious maneuvers become paramount as the galaxy watches with bated breath to see how neighboring empires will respond to this blatant display of aggression."
+ betterstellaris.204.a:0 "A regretful outcome."
+
+ betterstellaris.302.name:0 "Empire Capital Liberated"
+ betterstellaris.302.desc:0 "As your forces triumphantly seize the subjugated empire's capital, a groundswell of hope and defiance sweeps across the liberated populace. Citizens tear down oppressive banners, and celebrate the rebirth of a long-suppressed spirit.\n\nThe galaxy witnesses a beacon of freedom, as the once-oppressed civilization stands proudly independent once more. Your reputation as a champion of liberty echoes across the stars."
+ betterstellaris.302.a:0 "Long live the §Y[from.GetName]§!!"
+
+ betterstellaris.303.name:0 "Subject Empire Liberated"
+ betterstellaris.303.desc:0 "Our former subjects have been liberated by a cunning enemy force. They now stumble through the dark corridors of independence, ignorant of the disciplined order they have forsaken.\n\nWe must stand resolute against the tides of disorder. The political landscape has been forcefully reshaped, and the galaxy must confront the repercussions of this wanton act of defiance. For we stand as resolute as the stars themselves."
+ betterstellaris.303.a:0 "The §Y[from.GetName]§! will pay for this."
+
+ betterstellaris.304.name:0 "Empire Capital Liberated"
+ betterstellaris.304.desc:0 "The once-dimmed embers of our spirit ignite into a blazing fervor as banners of liberation replace the symbols of subjugation. Streets echo with triumphant cheers as we witness the arrival of our liberators, heralding a new era of autonomy.\n\nWith heartfelt allegiance, we pledge to rebuild our shattered nation, forever remembering the allies who restored our freedom amidst the vast expanse of the cosmos."
+ betterstellaris.304.a:0 "Long live the §Y[from.GetName]§!!"

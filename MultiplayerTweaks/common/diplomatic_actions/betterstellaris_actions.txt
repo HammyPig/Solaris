@@ -13,11 +13,8 @@ action_declare_war = {
 
 	potential = {
 		hidden_trigger = {
-			NOT = { is_overlord_to = FROM }
-			OR = {
-				is_subject = no
-				overlord = { NOT = { is_same_value = FROM } }
-			}
+			is_subject = no
+			NOT = { is_overlord_to = from }
 		}
 	}
 }

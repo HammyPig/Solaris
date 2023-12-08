@@ -6,3 +6,5 @@
  war_goal_betterstellaris_wg_liberate:0 "Restore Independance"
  war_goal_betterstellaris_wg_liberate_desc:0 "War is waged to free a subject empire from their overlord. The overlord loses their subject empire's victory score."
  casus_belli_betterstellaris_cb_liberate:0 "Liberate"
+
+ betterstellaris_wg_subjugation_effect:0 "§Y[from.GetName]§! becomes a subject under §Y[root.GetName]§!"
