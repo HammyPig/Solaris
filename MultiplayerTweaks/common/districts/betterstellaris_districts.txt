@@ -190,10 +190,6 @@ district_industrial = {
 		}
 	}
 
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -653,10 +649,6 @@ district_generator = {
 		}
 	}
 
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -784,10 +776,6 @@ district_mining = {
 		upkeep = {
 			energy = 1
 		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 2
 	}
 
 	triggered_planet_modifier = {
@@ -937,10 +925,6 @@ district_farming = {
 		upkeep = {
 			energy = 1
 		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 2
 	}
 
 	triggered_planet_modifier = {
@@ -1241,10 +1225,6 @@ district_rw_generator = {
 	}
 
 	triggered_planet_modifier = {
-		planet_housing_add = 10
-	}
-
-	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_machine_empire = yes }
@@ -1352,10 +1332,6 @@ district_rw_science = {
 			energy = @rw_maintenance
 			exotic_gases = @rw_maintenance_sr
 		}
-	}
-
-	triggered_planet_modifier = {
-		planet_housing_add = 10
 	}
 
 	triggered_planet_modifier = {
@@ -1580,10 +1556,6 @@ district_rw_industrial = {
 			}
 			energy = 4
 		}
-	}
-
-	triggered_planet_modifier = {
-		planet_housing_add = 10
 	}
 
 	triggered_planet_modifier = {
