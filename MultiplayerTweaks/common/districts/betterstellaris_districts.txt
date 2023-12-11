@@ -1091,7 +1091,6 @@ district_rw_city = {
 
 	planet_modifier = {
 		planet_housing_add = 25
-		job_enforcer_add = 2
 	}
 
 	triggered_planet_modifier = {
