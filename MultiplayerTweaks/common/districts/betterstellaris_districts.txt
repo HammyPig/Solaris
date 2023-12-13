@@ -1090,7 +1090,7 @@ district_rw_city = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 25
+		planet_housing_add = 10
 	}
 
 	triggered_planet_modifier = {
@@ -1221,7 +1221,7 @@ district_rw_generator = {
 			}
 		}
 		modifier = {
-			job_technician_add = 10
+			job_technician_add = 5
 		}
 	}
 
@@ -1311,7 +1311,7 @@ district_rw_science = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = 10
+			job_researcher_add = 5
 		}
 	}
 
@@ -1427,7 +1427,7 @@ district_rw_farming = {
 			}
 		}
 		modifier = {
-			job_farmer_add = 10
+			job_farmer_add = 5
 		}
 	}
 
@@ -1531,7 +1531,7 @@ district_rw_industrial = {
 			}
 		}
 		modifier = {
-			job_artisan_add = 5
+			job_artisan_add = 2
 		}
 	}
 
@@ -1557,7 +1557,7 @@ district_rw_industrial = {
 			}
 		}
 		modifier = {
-			job_foundry_add = 5
+			job_foundry_add = 2
 		}
 	}
 
