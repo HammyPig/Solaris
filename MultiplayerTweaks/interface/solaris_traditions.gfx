@@ -1,0 +1,260 @@
+spriteTypes = {
+    ################################################################
+
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_harmony
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_adaptability.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_harmony
+        texturefile = gfx/interface/tiles/tradition_category_tile_adaptability.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_harmony_pop_growth
+        texturefile = gfx/interface/icons/traditions/tradition_expansion_a_new_life.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_harmony_district_jobs
+        texturefile = gfx/interface/icons/traditions/tradition_prosperity_administrative_operations.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_harmony_city_housing
+        texturefile = gfx/interface/icons/traditions/tradition_prosperity_public_works.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_harmony_job_upkeep
+        texturefile = gfx/interface/icons/traditions/tradition_harmony_utopian_dream.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_harmony_empire_size
+        texturefile = gfx/interface/icons/traditions/tradition_expansion_courier_network.dds
+    }
+
+    ################################################################
+    
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_prosperity
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_prosperity.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_prosperity
+        texturefile = gfx/interface/tiles/tradition_category_tile_prosperity.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_prosperity_habitability
+        texturefile = gfx/interface/icons/traditions/tradition_mercantile_commercial_enterprise.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_prosperity_district_housing
+        texturefile = gfx/interface/icons/traditions/tradition_expansion_colonization_fever.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_prosperity_amenities_usage
+        texturefile = gfx/interface/icons/traditions/tradition_harmony_mind_and_body.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_prosperity_worker_output
+        texturefile = gfx/interface/icons/traditions/tradition_prosperity_interstellar_franchising.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_prosperity_empire_size
+        texturefile = gfx/interface/icons/traditions/tradition_enmity_rise_to_the_occasion.dds
+    }
+
+    ################################################################
+    
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_expansion
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_expansion.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_expansion
+        texturefile = gfx/interface/tiles/tradition_category_tile_expansion.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_expansion_monthly_influence
+        texturefile = gfx/interface/icons/traditions/tradition_enmity_eclipse.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_expansion_mining_station
+        texturefile = gfx/interface/icons/traditions/tradition_mercantile_marketplace_of_better_ideas.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_expansion_research_station
+        texturefile = gfx/interface/icons/traditions/tradition_discovery_to_boldly_go.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_expansion_starbase_capacity
+        texturefile = gfx/interface/icons/traditions/tradition_expansion_galactic_ambition.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_expansion_starbase_strength
+        texturefile = gfx/interface/icons/traditions/tradition_unyielding_defensive_zeal.dds
+    }
+
+    ################################################################
+    
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_unyielding
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_unyielding.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_unyielding
+        texturefile = gfx/interface/tiles/tradition_category_tile_unyielding.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_unyielding_outpost_speed
+        texturefile = gfx/interface/icons/traditions/tradition_statecraft_3.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_unyielding_starbase_influence
+        texturefile = gfx/interface/icons/traditions/tradition_enmity_outpace.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_unyielding_empire_size
+        texturefile = gfx/interface/icons/traditions/tradition_domination_grand_council.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_unyielding_starbase_upgrade
+        texturefile = gfx/interface/icons/traditions/tradition_unyielding_fortress_doctrine.dds
+    }
+    
+    spriteType = {
+        name = GFX_solaris_tr_unyielding_platform_cap
+        texturefile = gfx/interface/icons/traditions/tradition_adaptability_survival_fittest.dds
+    }
+
+    ################################################################
+    
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_supremacy
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_supremacy.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_supremacy
+        texturefile = gfx/interface/tiles/tradition_category_tile_supremacy.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_supremacy_ship_armor
+        texturefile = gfx/interface/icons/traditions/tradition_versatility_universal_compatability.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_supremacy_hull_regen
+        texturefile = gfx/interface/icons/traditions/tradition_supremacy_fleet_logistical_corps.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_supremacy_ship_upkeep
+        texturefile = gfx/interface/icons/traditions/tradition_unyielding_bulwark_of_harmony.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_supremacy_starbase_damage
+        texturefile = gfx/interface/icons/traditions/tradition_supremacy_great_game.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_supremacy_sensor_range
+        texturefile = gfx/interface/icons/traditions/tradition_diplomacy_entente_coordination.dds
+    }
+
+    ################################################################
+    
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_domination
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_domination.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_domination
+        texturefile = gfx/interface/tiles/tradition_category_tile_domination.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_domination_ship_cost
+        texturefile = gfx/interface/icons/traditions/tradition_supremacy_master_shipwrights.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_domination_ship_speed
+        texturefile = gfx/interface/icons/traditions/tradition_versatility_spatial_optimization.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_domination_commander_limit
+        texturefile = gfx/interface/icons/traditions/tradition_domination_judgment_corps.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_domination_disengagement_chance
+        texturefile = gfx/interface/icons/traditions/tradition_supremacy_war_games.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_domination_bombardment_damage
+        texturefile = gfx/interface/icons/traditions/tradition_supremacy_overwhelming_force.dds
+    }
+
+    ################################################################
+    
+    spriteType = {
+        name = GFX_tradition_category_icon_solaris_tradition_discovery
+        texturefile = gfx/interface/icons/traditions/tree_icons/tradition_icon_discovery.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_category_bg_solaris_tradition_discovery
+        texturefile = gfx/interface/tiles/tradition_category_tile_discovery.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_discovery_anomaly_chance
+        texturefile = gfx/interface/icons/traditions/tradition_discovery_planetary_survey_corps.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_discovery_anomaly_speed
+        texturefile = gfx/interface/icons/traditions/tradition_statecraft_2.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_discovery_research_alternatives
+        texturefile = gfx/interface/icons/traditions/tradition_discovery_science_division.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_discovery_researcher_upkeep
+        texturefile = gfx/interface/icons/traditions/tradition_versatility_material_analysis.dds
+    }
+
+    spriteType = {
+        name = GFX_solaris_tr_discovery_research_speed
+        texturefile = gfx/interface/icons/traditions/tradition_discovery_faith_in_science.dds
+    }
+}

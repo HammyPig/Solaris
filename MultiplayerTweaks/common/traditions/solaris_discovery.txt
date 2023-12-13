@@ -1,0 +1,55 @@
+solaris_tr_discovery_scientist_limit = {
+    modifier = {
+        country_scientist_cap_add = 2
+    }
+}
+
+solaris_tr_discovery_anomaly_chance = {
+    modifier = {
+        science_ship_survey_speed = 0.50
+        ship_anomaly_generation_chance_mult = 1.00
+    }
+}
+
+solaris_tr_discovery_anomaly_speed = {
+    possible = {
+        has_tradition = solaris_tr_discovery_anomaly_chance
+    }
+
+    modifier = {
+        ship_anomaly_research_speed_mult = 1.00
+    }
+}
+
+solaris_tr_discovery_research_alternatives = {
+    modifier = {
+        num_tech_alternatives_add = 2
+    }
+}
+
+solaris_tr_discovery_researcher_upkeep = {
+    possible = {
+        has_tradition = solaris_tr_discovery_research_alternatives
+    }
+
+    modifier = {
+        planet_researchers_upkeep_mult = -0.50
+    }
+}
+
+solaris_tr_discovery_research_speed = {
+    possible = {
+        has_tradition = solaris_tr_discovery_anomaly_speed
+        has_tradition = solaris_tr_discovery_researcher_upkeep
+    }
+
+    modifier = {
+        all_technology_research_speed = 0.20
+    }
+}
+
+solaris_tr_discovery_ascension_perk = {
+    modifier = {
+        ascension_perks_add = 1
+    }
+}

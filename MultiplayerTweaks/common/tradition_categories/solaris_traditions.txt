@@ -1,0 +1,90 @@
+solaris_tradition_harmony = {
+    tree_template = tree_21_12
+    adoption_bonus = solaris_tr_harmony_build_speed
+    finish_bonus = solaris_tr_harmony_ascension_perk
+    traditions = {
+        solaris_tr_harmony_pop_growth
+        solaris_tr_harmony_district_jobs
+        solaris_tr_harmony_city_housing
+        solaris_tr_harmony_job_upkeep
+        solaris_tr_harmony_empire_size
+    }
+}
+
+solaris_tradition_prosperity = {
+    tree_template = tree_21_12
+    adoption_bonus = solaris_tr_prosperity_colony_speed
+    finish_bonus = solaris_tr_prosperity_ascension_perk
+    traditions = {
+        solaris_tr_prosperity_habitability
+        solaris_tr_prosperity_district_housing
+        solaris_tr_prosperity_amenities_usage
+        solaris_tr_prosperity_worker_output
+        solaris_tr_prosperity_empire_size
+    }
+}
+
+solaris_tradition_expansion = {
+    tree_template = tree_21_11
+    adoption_bonus = solaris_tr_expansion_outpost_cost
+    finish_bonus = solaris_tr_expansion_ascension_perk
+    traditions = {
+        solaris_tr_expansion_mining_station
+        solaris_tr_expansion_research_station
+        solaris_tr_expansion_monthly_influence
+        solaris_tr_expansion_starbase_strength
+        solaris_tr_expansion_starbase_capacity
+    }
+}
+
+solaris_tradition_unyielding = {
+    tree_template = tree_111_11
+    adoption_bonus = solaris_tr_unyielding_hyperlane_detection
+    finish_bonus = solaris_tr_unyielding_ascension_perk
+    traditions = {
+        solaris_tr_unyielding_outpost_speed
+        solaris_tr_unyielding_starbase_influence
+        solaris_tr_unyielding_empire_size
+        solaris_tr_unyielding_starbase_upgrade
+        solaris_tr_unyielding_platform_cap
+    }
+}
+
+solaris_tradition_supremacy = {
+    tree_template = tree_11_12
+    adoption_bonus = solaris_tr_supremacy_command_limit
+    finish_bonus = solaris_tr_supremacy_ascension_perk
+    traditions = {
+        solaris_tr_supremacy_ship_armor
+        solaris_tr_supremacy_hull_regen
+        solaris_tr_supremacy_ship_upkeep
+        solaris_tr_supremacy_starbase_damage
+        solaris_tr_supremacy_sensor_range
+    }
+}
+
+solaris_tradition_domination = {
+    tree_template = tree_12_12
+    adoption_bonus = solaris_tr_domination_naval_capacity
+    finish_bonus = solaris_tr_domination_ascension_perk
+    traditions = {
+        solaris_tr_domination_ship_cost
+        solaris_tr_domination_ship_speed
+        solaris_tr_domination_disengagement_chance
+        solaris_tr_domination_commander_limit
+        solaris_tr_domination_bombardment_damage
+    }
+}
+
+solaris_tradition_discovery = {
+    tree_template = tree_11_11_21
+    adoption_bonus = solaris_tr_discovery_scientist_limit
+    finish_bonus = solaris_tr_discovery_ascension_perk
+    traditions = {
+        solaris_tr_discovery_anomaly_chance
+        solaris_tr_discovery_research_alternatives
+        solaris_tr_discovery_anomaly_speed
+        solaris_tr_discovery_researcher_upkeep
+        solaris_tr_discovery_research_speed
+    }
+}

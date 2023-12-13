@@ -1,0 +1,55 @@
+solaris_tr_prosperity_colony_speed = {
+    modifier = {
+        ship_colonizer_cost_mult = -0.20
+        planet_colony_development_speed_mult = 0.50
+    }
+}
+
+solaris_tr_prosperity_habitability = {
+    modifier = {
+        pop_environment_tolerance = 0.20
+    }
+}
+
+solaris_tr_prosperity_district_housing = {
+    custom_tooltip = solaris_tr_prosperity_district_housing_desc
+    
+    # modifier in districts directory
+}
+
+solaris_tr_prosperity_amenities_usage = {
+    possible = {
+        has_tradition = solaris_tr_prosperity_habitability
+        has_tradition = solaris_tr_prosperity_district_housing
+    }
+
+    modifier = {
+        pop_amenities_usage_mult = -0.20
+    }
+}
+
+solaris_tr_prosperity_worker_output = {
+    possible = {
+        has_tradition = solaris_tr_prosperity_amenities_usage
+    }
+
+    modifier = {
+        planet_jobs_produces_mult = 0.10
+    }
+}
+
+solaris_tr_prosperity_empire_size = {
+    possible = {
+        has_tradition = solaris_tr_prosperity_amenities_usage
+    }
+
+    modifier = {
+        empire_size_colonies_mult = -0.50
+    }
+}
+
+solaris_tr_prosperity_ascension_perk = {
+    modifier = {
+        ascension_perks_add = 1
+    }
+}

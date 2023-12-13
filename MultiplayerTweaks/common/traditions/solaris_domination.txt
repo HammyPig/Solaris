@@ -1,0 +1,55 @@
+solaris_tr_domination_naval_capacity = {
+    modifier = {
+        country_naval_cap_mult = 0.50
+    }
+}
+
+solaris_tr_domination_ship_cost = {
+    modifier = {
+        starbase_shipyard_build_cost_mult = -0.20
+        starbase_shipyard_build_speed_mult = 0.50
+    }
+}
+
+solaris_tr_domination_ship_speed = {
+    modifier = {
+        ship_speed_mult = 0.20
+    }
+}
+
+solaris_tr_domination_commander_limit = {
+    possible = {
+        has_tradition = solaris_tr_domination_ship_cost
+        has_tradition = solaris_tr_domination_ship_speed
+    }
+
+    modifier = {
+        country_commander_cap_add = 2
+    }
+}
+
+solaris_tr_domination_disengagement_chance = {
+    possible = {
+        has_tradition = solaris_tr_domination_ship_cost
+    }
+
+    modifier = {
+        ship_disengage_chance_mult = 0.50
+    }
+}
+
+solaris_tr_domination_bombardment_damage = {
+    possible = {
+        has_tradition = solaris_tr_domination_ship_speed
+    }
+    
+    modifier = {
+        ship_orbital_bombardment_mult = 1.00
+    }
+}
+
+solaris_tr_domination_ascension_perk = {
+    modifier = {
+        ascension_perks_add = 1
+    }
+}

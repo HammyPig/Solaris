@@ -1,0 +1,51 @@
+solaris_tr_expansion_outpost_cost = {
+    modifier = {
+        starbase_outpost_cost_mult = -0.50
+    }
+}
+
+solaris_tr_expansion_monthly_influence = {
+    modifier = {
+        country_traditions_influence_produces_add = 1
+    }
+}
+
+solaris_tr_expansion_mining_station = {
+    modifier = {
+        station_gatherers_produces_mult = 0.50
+    }
+}
+
+solaris_tr_expansion_research_station = {
+    modifier = {
+        station_researchers_produces_mult = 0.50
+    }
+}
+
+solaris_tr_expansion_starbase_capacity = {
+    possible = {
+        has_tradition = solaris_tr_expansion_monthly_influence
+    }
+
+    modifier = {
+        country_starbase_capacity_mult = 0.50
+    }
+}
+
+solaris_tr_expansion_starbase_strength = {
+    possible = {
+        has_tradition = solaris_tr_expansion_mining_station
+        has_tradition = solaris_tr_expansion_research_station
+    }
+
+    modifier = {
+        shipclass_starbase_damage_mult = 0.50
+        shipclass_starbase_hull_mult = 0.50
+    }
+}
+
+solaris_tr_expansion_ascension_perk = {
+    modifier = {
+        ascension_perks_add = 1
+    }
+}

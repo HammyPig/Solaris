@@ -116,6 +116,16 @@ district_city = {
 			planet_housing_add = 1
 		}
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_city_housing }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
 }
 
 district_industrial = {
@@ -571,6 +581,27 @@ district_industrial = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_artisan_add = 1
+			job_foundry_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
 }
 
 district_generator = {
@@ -707,6 +738,26 @@ district_generator = {
 		text = job_fe_acolyte_generator_effect_desc
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_technician_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
 	prerequisites = {
 		tech_power_plant_1
 	}
@@ -835,6 +886,26 @@ district_mining = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		text = job_fe_acolyte_mine_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_miner_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
 	}
 
 	prerequisites = {
@@ -1035,6 +1106,26 @@ district_farming = {
 		text = job_pearl_diver_effect_desc
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_farmer_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
 	prerequisites = {
 		tech_industrial_farming
 	}
@@ -1140,6 +1231,16 @@ district_rw_city = {
 			}
 		}
 		text = arcane_generator_upkeep_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_city_housing }
+		}
+		modifier = {
+			planet_housing_add = 10
+		}
 	}
 }
 
@@ -1253,6 +1354,26 @@ district_rw_generator = {
 		}
 		text = job_fe_acolyte_generator_effect_desc
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_technician_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
 }
 
 district_rw_science = {
@@ -1351,6 +1472,26 @@ district_rw_science = {
 			owner = { is_machine_empire = yes }
 		}
 		text = job_calculator_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_researcher_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
 	}
 }
 
@@ -1473,6 +1614,26 @@ district_rw_farming = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		text = job_fe_acolyte_farm_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_farmer_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
 	}
 }
 
@@ -1887,5 +2048,26 @@ district_rw_industrial = {
 			}
 		}
 		text = job_maintenance_drone_effect_desc
+	}
+
+	riggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_harmony_district_jobs }
+		}
+		modifier = {
+			job_artisan_add = 2
+			job_foundry_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = solaris_tr_prosperity_district_housing }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
 	}
 }

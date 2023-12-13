@@ -1,0 +1,53 @@
+solaris_tr_unyielding_hyperlane_detection = {
+    modifier = {
+        ship_hyperlane_range_add = 1
+    }
+}
+
+solaris_tr_unyielding_outpost_speed = {
+    modifier = {
+        shipsize_starbase_outpost_build_speed_mult = 0.50
+    }
+}
+
+solaris_tr_unyielding_starbase_influence = {
+    possible = {
+        has_tradition = solaris_tr_unyielding_outpost_speed
+    }
+
+    modifier = {
+        country_starbase_influence_cost_mult = -0.20
+    }
+}
+
+solaris_tr_unyielding_starbase_upgrade = {
+    modifier = {
+        starbase_upgrade_cost_mult = -0.50
+    }
+}
+
+solaris_tr_unyielding_platform_cap = {
+    possible = {
+        has_tradition = solaris_tr_unyielding_starbase_upgrade
+    }
+
+    modifier = {
+        starbase_defense_platform_capacity_mult = 0.50
+    }
+}
+
+solaris_tr_unyielding_empire_size = {
+    possible = {
+        has_tradition = solaris_tr_unyielding_starbase_influence
+    }
+    
+    modifier = {
+        empire_size_systems_mult = -0.50
+    }
+}
+
+solaris_tr_unyielding_ascension_perk = {
+    modifier = {
+        ascension_perks_add = 1
+    }
+}

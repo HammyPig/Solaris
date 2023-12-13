@@ -1,0 +1,54 @@
+solaris_tr_supremacy_command_limit = {
+    modifier = {
+        command_limit_mult = 0.50
+    }
+}
+
+solaris_tr_supremacy_ship_armor = {
+    modifier = {
+        ship_armor_mult = 0.20
+    }
+}
+
+solaris_tr_supremacy_hull_regen = {
+    possible = {
+        has_tradition = solaris_tr_supremacy_ship_armor
+    }
+    
+    modifier = {
+        ship_hull_regen_add_perc = 0.05
+        ship_armor_regen_add_perc = 0.15
+    }
+}
+
+solaris_tr_supremacy_ship_upkeep = {
+    modifier = {
+        ships_upkeep_mult = -0.20
+    }
+}
+
+solaris_tr_supremacy_starbase_damage = {
+    possible = {
+        has_tradition = solaris_tr_supremacy_ship_upkeep
+    }
+
+    modifier = {
+        ship_damage_against_starbases_mult = 0.50
+    }
+}
+
+solaris_tr_supremacy_sensor_range = {
+    possible = {
+        has_tradition = solaris_tr_supremacy_ship_upkeep
+    }
+
+    modifier = {
+        ship_sensor_range_add = 2
+    }
+}
+
+solaris_tr_supremacy_ascension_perk = {
+    modifier = {
+        ascension_perks_add = 1
+    }
+}
