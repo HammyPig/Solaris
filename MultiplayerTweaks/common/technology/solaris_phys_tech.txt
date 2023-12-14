@@ -1261,6 +1261,7 @@ tech_ftl_inhibitor = {
 	category = { particles }
 	prerequisites = { "tech_hyper_drive_1" }
 	weight = @tier2weight1
+    start_tech = yes
 
 	feature_flags = {
 		planetary_ftl_inhibitor
