@@ -158,7 +158,7 @@ tech_global_research_initiative = {
 	tier = 3
 	cost = @tier3cost1
 	category = { computing }
-	prerequisites = { "tech_basic_science_lab_2" }
+	prerequisites = { "tech_basic_science_lab_2" "tech_colonial_centralization" }
 	weight = @tier3weight1
 
 	weight_modifier = {
