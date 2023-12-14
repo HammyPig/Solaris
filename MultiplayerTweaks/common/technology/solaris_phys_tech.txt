@@ -133,7 +133,7 @@ tech_basic_science_lab_3 = {
 	category = { computing }
 	tier = 3
 	cost = @tier3cost1
-	prerequisites = { "tech_basic_science_lab_2" "tech_colonial_centralization" }
+	prerequisites = { "tech_basic_science_lab_2" }
 	weight = @tier3weight1
 
 	# unlocks 2nd upgraded labs
@@ -158,7 +158,7 @@ tech_global_research_initiative = {
 	tier = 3
 	cost = @tier3cost1
 	category = { computing }
-	prerequisites = { "tech_basic_science_lab_2" "tech_colonial_centralization" }
+	prerequisites = { "tech_basic_science_lab_2" }
 	weight = @tier3weight1
 
 	weight_modifier = {
@@ -554,7 +554,7 @@ tech_power_hub_2 = {
 	area = physics
 	tier = 2
 	category = { field_manipulation }
-	prerequisites = { "tech_power_hub_1" "tech_colonial_centralization"}
+	prerequisites = { "tech_power_hub_1" }
 	weight = @tier2weight3
 
 	weight_modifier = {
@@ -1138,7 +1138,7 @@ tech_jump_drive_1 = {
 	is_rare = yes
 	is_dangerous = yes
 	weight = @tier5weight1
-	prerequisites = { "tech_zero_point_power" }
+	prerequisites = { "tech_hyper_drive_3" }
 
 	feature_flags = {
 		jump_method
