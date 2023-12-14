@@ -448,7 +448,7 @@ tech_construction_templates = {
 	cost = @tier3cost2
 	area = engineering
 	tier = 3
-	is_rare = yes
+	is_rare = no
 	category = { industry }
 	prerequisites = { "tech_assembly_pattern" }
 	weight = @tier3weight2
@@ -468,10 +468,6 @@ tech_construction_templates = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_construction_templates
 		}
 		modifier = {
 			factor = 1.25
@@ -952,15 +948,11 @@ tech_defense_platform_hull_1 = {
 	tier = 2
 	category = { voidcraft }
 	prerequisites = { "tech_starbase_3" }
-	is_rare = yes
+	is_rare = no
 	weight = @tier2weight2
 
 	weight_modifier = {
 		factor = 0.50
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_defense_platform_hull_1
-		}
 		modifier = {
 			factor = 1.5
 			is_specialist_subject_type = { TYPE = bulwark }
@@ -979,7 +971,7 @@ tech_modular_engineering = {
 	category = { voidcraft }
 	tier = 2
 	prerequisites = { "tech_starbase_3" }
-	is_rare = yes
+	is_rare = no
 	weight = @tier2weight3
 
 	modifier = {
@@ -996,10 +988,6 @@ tech_modular_engineering = {
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_modular_engineering
-		}
 	}
 
 	ai_weight = {
@@ -1014,7 +1002,7 @@ tech_space_defense_station_improvement = {
 	tier = 3
 	category = { voidcraft }
 	prerequisites = { "tech_starbase_4" "tech_modular_engineering" }
-	is_rare = yes
+	is_rare = no
 	weight = @tier3weight3
 
 	modifier = {
@@ -1034,10 +1022,6 @@ tech_space_defense_station_improvement = {
 		modifier = {
 			factor = 1.5
 			is_specialist_subject_type = { TYPE = bulwark }
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_space_defense_station_improvement
 		}
 		modifier = {
 			factor = 1.25
@@ -1236,7 +1220,7 @@ tech_corvette_hull_2 = {
 	cost = @tier2cost3
 	area = engineering
 	tier = 2
-	is_rare = yes
+	is_rare = no
 	category = { voidcraft }
 	prerequisites = { "tech_corvette_hull_1" }
 	weight = @tier2weight3
@@ -1257,10 +1241,6 @@ tech_corvette_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_corvette_hull_2
 		}
 	}
 
@@ -1322,7 +1302,7 @@ tech_cruiser_hull_2 = {
 	cost = @tier4cost1
 	area = engineering
 	tier = 4
-	is_rare = yes
+	is_rare = no
 	category = { voidcraft }
 	prerequisites = { "tech_cruiser_hull_1" }
 	weight = @tier4weight1
@@ -1342,10 +1322,6 @@ tech_cruiser_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_cruiser_hull_2
 		}
 		modifier = {
 			factor = 1.25
@@ -1411,7 +1387,7 @@ tech_battleship_hull_2 = {
 	cost = @tier5cost1
 	area = engineering
 	tier = 5
-	is_rare = yes
+	is_rare = no
 	category = { voidcraft }
 	prerequisites = { "tech_battleship_hull_1" }
 	weight = @tier5weight1
@@ -1431,10 +1407,6 @@ tech_battleship_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_battleship_hull_2
 		}
 		modifier = {
 			factor = 1.25
