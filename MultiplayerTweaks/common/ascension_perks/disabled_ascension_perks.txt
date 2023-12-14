@@ -201,3 +201,27 @@ ap_mechromancy = {
 		always = no
 	}
 }
+
+ap_engineered_evolution = {
+	potential = {
+		always = no
+	}
+}
+
+ap_the_flesh_is_weak = {
+	potential = {
+		always = no
+	}
+}
+
+ap_synthetic_evolution = {
+	potential = {
+		always = no
+	}
+}
+
+ap_mind_over_matter = {
+	potential = {
+		always = no
+	}
+}
