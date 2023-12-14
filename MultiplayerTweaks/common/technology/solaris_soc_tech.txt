@@ -962,20 +962,6 @@ tech_holo_entertainment = {
 	## unlock holo-theatres building
 }
 
-tech_holo_entertainment = {
-	cost = 0
-	area = society
-	start_tech = yes
-	category = { statecraft }
-	tier = 0
-
-	potential = {
-		is_gestalt = no
-	}
-
-	## unlock holo-theatres building
-}
-
 tech_hyper_entertainment_forum = {
 	cost = @tier1cost3
 	area = society
