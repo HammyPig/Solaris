@@ -12,6 +12,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_harmony
+        texturefile = gfx/interface/traditions/tradition_hex_bg_adaptability.dds
+    }
+
+    spriteType = {
         name = GFX_solaris_tr_harmony_pop_growth
         texturefile = gfx/interface/icons/traditions/tradition_expansion_a_new_life.dds
     }
@@ -46,6 +51,11 @@ spriteTypes = {
     spriteType = {
         name = GFX_tradition_category_bg_solaris_tradition_prosperity
         texturefile = gfx/interface/tiles/tradition_category_tile_prosperity.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_prosperity
+        texturefile = gfx/interface/traditions/tradition_hex_bg_prosperity.dds
     }
 
     spriteType = {
@@ -86,6 +96,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_expansion
+        texturefile = gfx/interface/traditions/tradition_hex_bg_expansion.dds
+    }
+
+    spriteType = {
         name = GFX_solaris_tr_expansion_monthly_influence
         texturefile = gfx/interface/icons/traditions/tradition_enmity_eclipse.dds
     }
@@ -120,6 +135,11 @@ spriteTypes = {
     spriteType = {
         name = GFX_tradition_category_bg_solaris_tradition_unyielding
         texturefile = gfx/interface/tiles/tradition_category_tile_unyielding.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_unyielding
+        texturefile = gfx/interface/traditions/tradition_hex_bg_unyielding.dds
     }
 
     spriteType = {
@@ -160,6 +180,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_supremacy
+        texturefile = gfx/interface/traditions/tradition_hex_bg_supremacy.dds
+    }
+
+    spriteType = {
         name = GFX_solaris_tr_supremacy_ship_armor
         texturefile = gfx/interface/icons/traditions/tradition_versatility_universal_compatability.dds
     }
@@ -197,6 +222,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_domination
+        texturefile = gfx/interface/traditions/tradition_hex_bg_domination.dds
+    }
+
+    spriteType = {
         name = GFX_solaris_tr_domination_ship_cost
         texturefile = gfx/interface/icons/traditions/tradition_supremacy_master_shipwrights.dds
     }
@@ -231,6 +261,11 @@ spriteTypes = {
     spriteType = {
         name = GFX_tradition_category_bg_solaris_tradition_discovery
         texturefile = gfx/interface/tiles/tradition_category_tile_discovery.dds
+    }
+
+    spriteType = {
+        name = GFX_tradition_hex_bg_solaris_tradition_discovery
+        texturefile = gfx/interface/traditions/tradition_hex_bg_discovery.dds
     }
 
     spriteType = {
