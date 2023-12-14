@@ -331,10 +331,6 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = @T4_weight
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = exotic_gases }
-		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 0
@@ -368,10 +364,6 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = @T4_weight
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = exotic_gases }
-		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 0
@@ -405,10 +397,6 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = @T4_weight
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = exotic_gases }
-		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 0
@@ -443,10 +431,6 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = @T5_weight
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = exotic_gases }
-		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 0
@@ -480,10 +464,6 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = @T5_weight
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = exotic_gases }
-		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 0
@@ -517,10 +497,6 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = @T5_weight
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = exotic_gases }
-		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 0
