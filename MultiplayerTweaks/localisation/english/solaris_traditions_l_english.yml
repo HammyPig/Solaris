@@ -12,7 +12,7 @@
 
   solaris_tradition_prosperity:0 "Prosperity"
   solaris_tradition_prosperity_desc:0 "Colonise many low-maintenance worlds."
-  solaris_tr_prosperity_colony_speed:0 "Prosperity Traditions"
+  solaris_tr_prosperity_colony_cost:0 "Prosperity Traditions"
   solaris_tr_prosperity_habitability:0 "Artificial Habitats"
   solaris_tr_prosperity_district_housing:0 "Mixed-Use Development"
   solaris_tr_prosperity_district_housing_desc:1 "§YNon-City Districts§! provide §Y2§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!."

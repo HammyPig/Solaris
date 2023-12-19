@@ -13,7 +13,7 @@ solaris_tradition_harmony = {
 
 solaris_tradition_prosperity = {
     tree_template = tree_21_12
-    adoption_bonus = solaris_tr_prosperity_colony_speed
+    adoption_bonus = solaris_tr_prosperity_colony_cost
     finish_bonus = solaris_tr_prosperity_ascension_perk
     traditions = {
         solaris_tr_prosperity_habitability
