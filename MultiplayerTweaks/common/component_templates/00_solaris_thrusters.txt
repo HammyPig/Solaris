@@ -72,6 +72,12 @@
 @colossus_cost4 = 240
 @colossus_cost5 = 300
 
+@thruster1_base_speed_mult = 0.00
+@thruster2_base_speed_mult = 0.25
+@thruster3_base_speed_mult = 0.50
+@thruster4_base_speed_mult = 0.75
+@thruster5_base_speed_mult = 1.25
+
 
 #############
 # THRUSTERS #
@@ -250,7 +256,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.25
+		ship_base_speed_mult = @thruster2_base_speed_mult
 		ship_evasion_add = 5
 	}
 
@@ -278,7 +284,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_base_speed_mult = 0.25
+		ship_base_speed_mult = @thruster2_base_speed_mult
 		ship_evasion_add = 4
 	}
 
@@ -306,7 +312,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_base_speed_mult = 0.25
+		ship_base_speed_mult = @thruster2_base_speed_mult
 		ship_evasion_add = 3
 	}
 
@@ -334,7 +340,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_base_speed_mult = 0.25
+		ship_base_speed_mult = @thruster2_base_speed_mult
 		ship_evasion_add = 2
 	}
 
@@ -362,7 +368,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_base_speed_mult = 0.25
+		ship_base_speed_mult = @thruster2_base_speed_mult
 		ship_evasion_add = 1
 	}
 
@@ -390,7 +396,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_base_speed_mult = 0.25
+		ship_base_speed_mult = @thruster2_base_speed_mult
 	}
 
 	prerequisites = { "tech_thrusters_2" }
@@ -419,7 +425,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.50
+		ship_base_speed_mult = @thruster3_base_speed_mult
 		ship_evasion_add = 10
 	}
 
@@ -446,7 +452,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.50
+		ship_base_speed_mult = @thruster3_base_speed_mult
 		ship_evasion_add = 8
 	}
 
@@ -473,7 +479,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.50
+		ship_base_speed_mult = @thruster3_base_speed_mult
 		ship_evasion_add = 6
 	}
 
@@ -500,7 +506,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.50
+		ship_base_speed_mult = @thruster3_base_speed_mult
 		ship_evasion_add = 4
 	}
 
@@ -527,7 +533,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.50
+		ship_base_speed_mult = @thruster3_base_speed_mult
 		ship_evasion_add = 2
 	}
 
@@ -554,7 +560,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.50
+		ship_base_speed_mult = @thruster3_base_speed_mult
 	}
 
 	prerequisites = { "tech_thrusters_3" }
@@ -582,7 +588,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.75
+		ship_base_speed_mult = @thruster4_base_speed_mult
 		ship_evasion_add = 15
 	}
 
@@ -609,7 +615,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.75
+		ship_base_speed_mult = @thruster4_base_speed_mult
 		ship_evasion_add = 12
 	}
 
@@ -636,7 +642,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.75
+		ship_base_speed_mult = @thruster4_base_speed_mult
 		ship_evasion_add = 9
 	}
 
@@ -663,7 +669,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.75
+		ship_base_speed_mult = @thruster4_base_speed_mult
 		ship_evasion_add = 6
 	}
 
@@ -690,7 +696,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.75
+		ship_base_speed_mult = @thruster4_base_speed_mult
 		ship_evasion_add = 3
 	}
 
@@ -718,7 +724,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 0.75
+		ship_base_speed_mult = @thruster4_base_speed_mult
 	}
 
 	prerequisites = { "tech_thrusters_4" }
@@ -747,7 +753,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = @thruster5_base_speed_mult
 		ship_evasion_add = 20
 	}
 
@@ -782,7 +788,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = @thruster5_base_speed_mult
 		ship_evasion_add = 16
 	}
 
@@ -817,7 +823,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = @thruster5_base_speed_mult
 		ship_evasion_add = 12
 	}
 
@@ -852,7 +858,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = @thruster5_base_speed_mult
 		ship_evasion_add = 8
 	}
 
@@ -887,7 +893,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = @thruster5_base_speed_mult
 		ship_evasion_add = 4
 	}
 
@@ -923,7 +929,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = @thruster5_base_speed_mult
 	}
 
 	prerequisites = { "tech_dark_matter_propulsion" }
