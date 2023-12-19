@@ -17,30 +17,30 @@ solaris_tr_prosperity_district_housing = {
     # modifier in districts directory
 }
 
-solaris_tr_prosperity_amenities_usage = {
+solaris_tr_prosperity_district_jobs = {
     possible = {
         has_tradition = solaris_tr_prosperity_habitability
         has_tradition = solaris_tr_prosperity_district_housing
     }
 
-    modifier = {
-        pop_amenities_usage_mult = -0.20
-    }
+    custom_tooltip = solaris_tr_prosperity_district_jobs_desc
+    
+    # modifier in districts directory
 }
 
-solaris_tr_prosperity_worker_output = {
+solaris_tr_prosperity_amenities_usage = {
     possible = {
-        has_tradition = solaris_tr_prosperity_amenities_usage
+        has_tradition = solaris_tr_prosperity_district_jobs
     }
 
     modifier = {
-        planet_jobs_produces_mult = 0.10
+        pop_amenities_usage_mult = -0.50
     }
 }
 
 solaris_tr_prosperity_empire_size = {
     possible = {
-        has_tradition = solaris_tr_prosperity_amenities_usage
+        has_tradition = solaris_tr_prosperity_district_jobs
     }
 
     modifier = {

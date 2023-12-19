@@ -1,11 +1,11 @@
 solaris_tradition_harmony = {
     tree_template = tree_21_12
-    adoption_bonus = solaris_tr_harmony_build_speed
+    adoption_bonus = solaris_tr_harmony_max_districts
     finish_bonus = solaris_tr_harmony_ascension_perk
     traditions = {
-        solaris_tr_harmony_pop_growth
-        solaris_tr_harmony_district_jobs
         solaris_tr_harmony_city_housing
+        solaris_tr_harmony_district_cost
+        solaris_tr_harmony_pop_growth
         solaris_tr_harmony_job_upkeep
         solaris_tr_harmony_empire_size
     }
@@ -18,8 +18,8 @@ solaris_tradition_prosperity = {
     traditions = {
         solaris_tr_prosperity_habitability
         solaris_tr_prosperity_district_housing
+        solaris_tr_prosperity_district_jobs
         solaris_tr_prosperity_amenities_usage
-        solaris_tr_prosperity_worker_output
         solaris_tr_prosperity_empire_size
     }
 }

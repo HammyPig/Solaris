@@ -1,35 +1,38 @@
-solaris_tr_harmony_build_speed = {
+solaris_tr_harmony_max_districts = {
+    custom_tooltip = solaris_tr_harmony_max_districts_desc
+
     modifier = {
-        planet_building_build_speed_mult = 0.50
+        planet_non_artificial_max_districts_add = 10
     }
-}
-
-solaris_tr_harmony_pop_growth = {
-    modifier = {
-        pop_growth_speed = 0.20
-    }
-}
-
-solaris_tr_harmony_district_jobs = {
-    custom_tooltip = solaris_tr_harmony_district_jobs_desc
-
-    # modifier in districts directory
 }
 
 solaris_tr_harmony_city_housing = {
-    possible = {
-        has_tradition = solaris_tr_harmony_pop_growth
-        has_tradition = solaris_tr_harmony_district_jobs
-    }
-
     custom_tooltip = solaris_tr_harmony_city_housing_desc
 
     # modifier in districts directory
 }
 
-solaris_tr_harmony_job_upkeep = {
+solaris_tr_harmony_district_cost = {
+    modifier = {
+        planet_structures_cost_mult = -0.20
+        planet_building_build_speed_mult = 0.50
+    }
+}
+
+solaris_tr_harmony_pop_growth = {
     possible = {
         has_tradition = solaris_tr_harmony_city_housing
+        has_tradition = solaris_tr_harmony_district_cost
+    }
+
+    modifier = {
+        pop_growth_speed = 0.20
+    }
+}
+
+solaris_tr_harmony_job_upkeep = {
+    possible = {
+        has_tradition = solaris_tr_harmony_pop_growth
     }
 
     modifier = {
@@ -39,7 +42,7 @@ solaris_tr_harmony_job_upkeep = {
 
 solaris_tr_harmony_empire_size = {
     possible = {
-        has_tradition = solaris_tr_harmony_city_housing
+        has_tradition = solaris_tr_harmony_pop_growth
     }
     
     modifier = {

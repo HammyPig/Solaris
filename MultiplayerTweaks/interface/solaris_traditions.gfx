@@ -17,18 +17,18 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = GFX_solaris_tr_harmony_pop_growth
-        texturefile = gfx/interface/icons/traditions/tradition_expansion_a_new_life.dds
+        name = GFX_solaris_tr_harmony_city_housing
+        texturefile = gfx/interface/icons/traditions/tradition_prosperity_public_works.dds
     }
 
     spriteType = {
-        name = GFX_solaris_tr_harmony_district_jobs
+        name = GFX_solaris_tr_harmony_district_cost
         texturefile = gfx/interface/icons/traditions/tradition_prosperity_administrative_operations.dds
     }
 
     spriteType = {
-        name = GFX_solaris_tr_harmony_city_housing
-        texturefile = gfx/interface/icons/traditions/tradition_prosperity_public_works.dds
+        name = GFX_solaris_tr_harmony_pop_growth
+        texturefile = gfx/interface/icons/traditions/tradition_expansion_a_new_life.dds
     }
 
     spriteType = {
@@ -69,13 +69,13 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = GFX_solaris_tr_prosperity_amenities_usage
-        texturefile = gfx/interface/icons/traditions/tradition_harmony_mind_and_body.dds
+        name = GFX_solaris_tr_prosperity_district_jobs
+        texturefile = gfx/interface/icons/traditions/tradition_prosperity_interstellar_franchising.dds
     }
 
     spriteType = {
-        name = GFX_solaris_tr_prosperity_worker_output
-        texturefile = gfx/interface/icons/traditions/tradition_prosperity_interstellar_franchising.dds
+        name = GFX_solaris_tr_prosperity_amenities_usage
+        texturefile = gfx/interface/icons/traditions/tradition_harmony_mind_and_body.dds
     }
 
     spriteType = {
