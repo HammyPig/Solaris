@@ -73,10 +73,10 @@
 @colossus_cost5 = 300
 
 @thruster1_base_speed_mult = 0.00
-@thruster2_base_speed_mult = 0.25
-@thruster3_base_speed_mult = 0.50
-@thruster4_base_speed_mult = 0.75
-@thruster5_base_speed_mult = 1.25
+@thruster2_base_speed_mult = 1.00
+@thruster3_base_speed_mult = 2.00
+@thruster4_base_speed_mult = 3.00
+@thruster5_base_speed_mult = 5.00
 
 
 #############
