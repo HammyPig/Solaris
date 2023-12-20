@@ -1,6 +1,6 @@
-@speed_very_slow = 80
-@speed_slow = 100
-@speed_default = 120
-@speed_fast = 140
-@speed_very_fast = 160
-@speed_event_super_slow = 0.5
+@speed_very_slow = 160
+@speed_slow = 200
+@speed_default = 240
+@speed_fast = 280
+@speed_very_fast = 320
+@speed_event_super_slow = 1
